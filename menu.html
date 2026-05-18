@@ -3,24 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Carte — L'Étoile</title>
+  <title>La Carte — L'Étoile Clermont</title>
   <meta name="description" content="Découvrez la carte de L'Étoile à Clermont-Ferrand : tacos signatures, burgers, bowls, frites et desserts." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Inter:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
 
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          7j/7 de 11h00 à 02h00
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          63 Avenue de la République, 63000 Clermont-Ferrand
+        </span>
+      </div>
+      <div class="top-bar-socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.6 6H17V2.2C16.5 2.1 15.2 2 14 2c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/></svg></a>
+        <a href="#" aria-label="Snapchat"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c3.3 0 5.5 2.4 5.5 5.7 0 1.4-.2 3-.4 4 .5.3 1 .4 1.5.4.7 0 1.2-.3 1.5-.3.3 0 .6.2.6.5 0 .8-2 1.4-2.8 1.6.2.4.5.9 1 1.4.6.6 1.5 1 2.5 1.2.3.1.4.3.4.5 0 .6-1.5 1-3 1.2-.1.2-.2.7-.4 1.1-.1.2-.3.3-.5.3-.4 0-1-.2-1.9-.2-1.3 0-1.6.3-2.5 1-.7.6-1.5 1.1-2.6 1.1s-1.9-.5-2.6-1.1c-.9-.7-1.2-1-2.5-1-.9 0-1.5.2-1.9.2-.2 0-.4-.1-.5-.3-.2-.4-.3-.9-.4-1.1-1.5-.2-3-.6-3-1.2 0-.2.1-.4.4-.5 1-.2 1.9-.6 2.5-1.2.5-.5.8-1 1-1.4-.8-.2-2.8-.8-2.8-1.6 0-.3.3-.5.6-.5.3 0 .8.3 1.5.3.5 0 1-.1 1.5-.4-.2-1-.4-2.6-.4-4C6.5 4.4 8.7 2 12 2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
   <header class="site-header" id="siteHeader">
     <div class="container nav-wrap">
       <a href="index.html" class="logo" aria-label="L'Étoile Clermont - Accueil">
         <span class="logo-mark" aria-hidden="true"></span>
-        <span class="logo-text">
-          <strong>L'Étoile</strong>
-          <small>Clermont</small>
-        </span>
+        <span class="logo-text"><strong>L'Etoile</strong><small>Clermont</small></span>
       </a>
       <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primaryNav">
         <span></span><span></span><span></span>
@@ -28,459 +47,164 @@
       <nav id="primaryNav" class="primary-nav" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="menu.html" class="active">Notre Carte</a></li>
-          <li><a href="about.html">Notre histoire</a></li>
+          <li><a href="menu.html#tacos-signatures" class="active">Tacos</a></li>
+          <li><a href="menu.html#burgers">Burgers</a></li>
+          <li><a href="menu.html#bowls">Bowls</a></li>
+          <li><a href="menu.html#frites">Frites & Barquettes</a></li>
+          <li><a href="menu.html#desserts">Desserts</a></li>
+          <li><a href="menu.html#boissons">Boissons</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <a class="btn btn-primary nav-cta" href="contact.html#commander">Commander</a>
+        <a class="btn btn-primary nav-cta" href="contact.html#commander">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2l3 7H4l3-7z"/><path d="M3 9h18l-2 11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L3 9z"/></svg>
+          Commander
+        </a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- PAGE HEADER -->
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">La carte</p>
+        <p class="eyebrow">Notre Carte</p>
         <h1>Tout est cuisiné <span class="accent">sur place</span>.</h1>
-        <p class="lead">Des recettes simples et bien faites. Demandez votre sauce, choisissez votre piquant — on s'occupe du reste.</p>
+        <p class="lead">Des recettes uniques, des produits frais. Choisissez votre sauce, votre piquant — on s'occupe du reste.</p>
       </div>
     </section>
 
-    <!-- MENU FILTER -->
     <section class="section">
       <div class="container">
-        <div class="menu-filters" role="tablist" aria-label="Catégories de la carte">
+        <div class="menu-filters" role="tablist" aria-label="Catégories">
           <button class="filter active" role="tab" data-filter="all">Tout</button>
           <button class="filter" role="tab" data-filter="tacos-signatures">Tacos Signatures</button>
           <button class="filter" role="tab" data-filter="tacos-composer">Tacos à Composer</button>
           <button class="filter" role="tab" data-filter="burgers">Burgers</button>
-          <button class="filter" role="tab" data-filter="frites">Frites & Barquettes</button>
+          <button class="filter" role="tab" data-filter="frites">Frites</button>
           <button class="filter" role="tab" data-filter="bowls">Bowls</button>
           <button class="filter" role="tab" data-filter="tacos-sucres">Tacos Sucrés</button>
           <button class="filter" role="tab" data-filter="desserts">Desserts</button>
           <button class="filter" role="tab" data-filter="boissons">Boissons</button>
         </div>
 
+
         <!-- TACOS SIGNATURES -->
-        <div class="menu-section" data-cat="tacos-signatures">
-          <h2 class="cat-title">🌯 Tacos Signatures</h2>
+        <div class="menu-section" data-cat="tacos-signatures" id="tacos-signatures">
+          <h2 class="cat-title">Tacos Signatures</h2>
           <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Merveille</h3><span class="price">10.00 €</span></div>
-                <p>Tacos signature maison, viande et sauce fromagère.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Thentik</h3><span class="price">12.00 €</span></div>
-                <p>Recette authentique, garniture généreuse.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Chèvre Miel</h3><span class="price">10.00 €</span></div>
-                <p>Chèvre fondant et miel, un duo sucré-salé.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Spicy</h3><span class="price">12.00 €</span></div>
-                <p>Pour les amateurs de sensations fortes.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Xford</h3><span class="price">10.00 €</span></div>
-                <p>Recette originale, saveurs uniques.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Rientale</h3><span class="price">12.00 €</span></div>
-                <p>Inspiration orientale, épices et sauce maison.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Chef</h3><span class="price">10.00 €</span></div>
-                <p>La spécialité du chef.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Montagnard</h3><span class="price">10.00 €</span></div>
-                <p>Fromage fondu montagnard, viande et pommes de terre.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Vergnat</h3><span class="price">12.00 €</span></div>
-                <p>Spécialité auvergnate revisitée en tacos.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>O'Riginal</h3><span class="price">12.00 €</span></div>
-                <p>Notre recette la plus originale.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Doritos</h3><span class="price">12.00 €</span></div>
-                <p>Tacos garni de Doritos croquants.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Végétarien <span class="badge veg">Veggie</span></h3><span class="price">8.00 €</span></div>
-                <p>Option 100% végétarienne, falafel et légumes.</p>
-              </div>
-            </article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Merveille</h3><span class="price">10.00 €</span></div><p>Tacos signature maison, viande et sauce fromagère.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Thentik</h3><span class="price">12.00 €</span></div><p>Recette authentique, garniture généreuse.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Chèvre Miel</h3><span class="price">10.00 €</span></div><p>Chèvre fondant et miel, un duo sucré-salé.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Spicy</h3><span class="price">12.00 €</span></div><p>Pour les amateurs de sensations fortes.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Xford</h3><span class="price">10.00 €</span></div><p>Recette originale, saveurs uniques.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Rientale</h3><span class="price">12.00 €</span></div><p>Inspiration orientale, épices et sauce maison.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Chef</h3><span class="price">10.00 €</span></div><p>La spécialité du chef.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Montagnard</h3><span class="price">10.00 €</span></div><p>Fromage fondu montagnard, viande et pommes de terre.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Vergnat</h3><span class="price">12.00 €</span></div><p>Spécialité auvergnate revisitée en tacos.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>O'Riginal</h3><span class="price">12.00 €</span></div><p>Notre recette la plus originale.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Doritos</h3><span class="price">12.00 €</span></div><p>Tacos garni de Doritos croquants.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Végétarien <span class="badge veg">Veggie</span></h3><span class="price">8.00 €</span></div><p>Option 100% végétarienne, falafel et légumes.</p></div></article>
           </div>
         </div>
 
         <!-- TACOS À COMPOSER -->
         <div class="menu-section" data-cat="tacos-composer">
-          <h2 class="cat-title">🌯 Tacos à Composer</h2>
+          <h2 class="cat-title">Tacos à Composer</h2>
           <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Simple (M)</h3><span class="price">8.00 €</span></div>
-                <p>1 viande au choix, frites, sauce fromagère.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Maxi (L)</h3><span class="price">12.00 €</span></div>
-                <p>2 viandes au choix, frites, sauce fromagère.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Mega (XL)</h3><span class="price">15.00 €</span></div>
-                <p>3 viandes au choix, frites, sauce fromagère.</p>
-              </div>
-            </article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Simple (M)</h3><span class="price">8.00 €</span></div><p>1 viande au choix, frites, sauce fromagère.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Maxi (L)</h3><span class="price">12.00 €</span></div><p>2 viandes au choix, frites, sauce fromagère.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Mega (XL)</h3><span class="price">15.00 €</span></div><p>3 viandes au choix, frites, sauce fromagère.</p></div></article>
           </div>
-          <div class="info-band" style="margin-top:1.5rem;">
-            <h3>Viandes au choix</h3>
-            <p>Tenders · Kebab · Steak · Nuggets · Chicken · Merguez · Cordon bleu · Falafel · Kefta…</p>
-          </div>
+          <div class="info-band" style="margin-top:1.5rem;"><h3>Viandes au choix</h3><p>Tenders · Kebab · Steak · Nuggets · Chicken · Merguez · Cordon bleu · Falafel · Kefta…</p></div>
         </div>
 
         <!-- BURGERS -->
-        <div class="menu-section" data-cat="burgers">
-          <h2 class="cat-title">🍔 Burgers</h2>
+        <div class="menu-section" data-cat="burgers" id="burgers">
+          <h2 class="cat-title">Burgers</h2>
           <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Cheese Burger</h3><span class="price">7.90 €</span></div>
-                <p>Steak haché, cheddar, salade, tomate, sauce burger.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Double Cheese</h3><span class="price">8.90 €</span></div>
-                <p>Double steak, double cheddar, salade, tomate, oignons.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Triple Cheese</h3><span class="price">9.90 €</span></div>
-                <p>Triple steak, triple cheddar, garniture complète.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Royal Bacon</h3><span class="price">9.90 €</span></div>
-                <p>Steak, bacon croustillant, cheddar, sauce BBQ.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Double Cheese Bacon</h3><span class="price">11.90 €</span></div>
-                <p>Double steak, bacon, double cheddar, sauce signature.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Chicken Burger</h3><span class="price">7.90 €</span></div>
-                <p>Filet de poulet croustillant, salade, sauce maison.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>King Burger</h3><span class="price">8.90 €</span></div>
-                <p>Steak XL, fromage, oignons caramélisés, sauce royale.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>PSG</h3><span class="price">10.90 €</span></div>
-                <p>Notre burger premium, garniture exceptionnelle.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Mac Burger</h3><span class="price">9.90 €</span></div>
-                <p>Double steak, sauce spéciale, oignons, cornichons.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Chèvre Miel Burger</h3><span class="price">8.90 €</span></div>
-                <p>Steak, chèvre fondant, miel, roquette.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Veggie Burger <span class="badge veg">Veggie</span></h3><span class="price">7.90 €</span></div>
-                <p>Steak végétal, crudités, sauce au choix.</p>
-              </div>
-            </article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Cheese Burger</h3><span class="price">7.90 €</span></div><p>Steak haché, cheddar, salade, tomate, sauce burger.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Double Cheese</h3><span class="price">8.90 €</span></div><p>Double steak, double cheddar, salade, tomate.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Triple Cheese</h3><span class="price">9.90 €</span></div><p>Triple steak, triple cheddar, garniture complète.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Royal Bacon</h3><span class="price">9.90 €</span></div><p>Steak, bacon croustillant, cheddar, sauce BBQ.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Double Cheese Bacon</h3><span class="price">11.90 €</span></div><p>Double steak, bacon, double cheddar.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Chicken Burger</h3><span class="price">7.90 €</span></div><p>Filet de poulet croustillant, salade, sauce maison.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>King Burger</h3><span class="price">8.90 €</span></div><p>Steak XL, fromage, oignons caramélisés.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>PSG</h3><span class="price">10.90 €</span></div><p>Notre burger premium, garniture exceptionnelle.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Mac Burger</h3><span class="price">9.90 €</span></div><p>Double steak, sauce spéciale, oignons, cornichons.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Chèvre Miel Burger</h3><span class="price">8.90 €</span></div><p>Steak, chèvre fondant, miel, roquette.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Veggie Burger <span class="badge veg">Veggie</span></h3><span class="price">7.90 €</span></div><p>Steak végétal, crudités, sauce au choix.</p></div></article>
           </div>
         </div>
 
         <!-- FRITES & BARQUETTES -->
-        <div class="menu-section" data-cat="frites">
-          <h2 class="cat-title">🍟 Frites & Barquettes</h2>
+        <div class="menu-section" data-cat="frites" id="frites">
+          <h2 class="cat-title">Frites & Barquettes</h2>
           <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Moyenne Frites</h3><span class="price">3.90 €</span></div>
-                <p>Frites dorées, portion moyenne.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Grande Frites</h3><span class="price">4.90 €</span></div>
-                <p>Frites dorées, grande portion.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Frites Fromagère</h3><span class="price">4.90 €</span></div>
-                <p>Frites nappées de sauce fromagère maison.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Frites Cheddar</h3><span class="price">4.90 €</span></div>
-                <p>Frites recouvertes de cheddar fondu.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Frites Cheddar Bacon</h3><span class="price">5.90 €</span></div>
-                <p>Frites, cheddar fondu et bacon croustillant.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Frites Fromagère Lardon</h3><span class="price">5.90 €</span></div>
-                <p>Frites, sauce fromagère et lardons grillés.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Barquette Kebab</h3><span class="price">12.00 €</span></div>
-                <p>Frites garnies de viande kebab, sauce au choix.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Nuggets Cheddar & Onions Crispy</h3><span class="price">9.90 €</span></div>
-                <p>Nuggets, cheddar fondu et oignons croustillants.</p>
-              </div>
-            </article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Moyenne Frites</h3><span class="price">3.90 €</span></div><p>Frites dorées, portion moyenne.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Grande Frites</h3><span class="price">4.90 €</span></div><p>Frites dorées, grande portion.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Frites Fromagère</h3><span class="price">4.90 €</span></div><p>Frites nappées de sauce fromagère maison.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Frites Cheddar</h3><span class="price">4.90 €</span></div><p>Frites recouvertes de cheddar fondu.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Frites Cheddar Bacon</h3><span class="price">5.90 €</span></div><p>Frites, cheddar fondu et bacon croustillant.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Frites Fromagère Lardon</h3><span class="price">5.90 €</span></div><p>Frites, sauce fromagère et lardons grillés.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Barquette Kebab</h3><span class="price">12.00 €</span></div><p>Frites garnies de viande kebab, sauce au choix.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Nuggets Cheddar & Onions Crispy</h3><span class="price">9.90 €</span></div><p>Nuggets, cheddar fondu et oignons croustillants.</p></div></article>
           </div>
         </div>
 
         <!-- BOWLS -->
-        <div class="menu-section" data-cat="bowls">
-          <h2 class="cat-title">🥗 Bowls</h2>
+        <div class="menu-section" data-cat="bowls" id="bowls">
+          <h2 class="cat-title">Bowls</h2>
           <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Big Bowl</h3><span class="price">16.90 €</span></div>
-                <p>Notre plus grand bowl, garniture XXL.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Crousti Bowl</h3><span class="price">14.90 €</span></div>
-                <p>Bowl croustillant, tenders et légumes frais.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Mythique Bowl</h3><span class="price">14.90 €</span></div>
-                <p>Le classique de la maison, viande et crudités.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Super Bowl</h3><span class="price">16.90 €</span></div>
-                <p>Bowl généreux, double garniture.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Veggie Bowl <span class="badge veg">Veggie</span></h3><span class="price">13.90 €</span></div>
-                <p>100% végétarien, falafel et légumes grillés.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Kebabowl</h3><span class="price">14.90 €</span></div>
-                <p>Bowl kebab, riz, crudités et sauce signature.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Crispy Bowl</h3><span class="price">14.90 €</span></div>
-                <p>Poulet croustillant, riz et sauce.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Typik Bowl</h3><span class="price">14.90 €</span></div>
-                <p>Recette typique, viande grillée et garniture fraîche.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Cheese Bowl</h3><span class="price">14.90 €</span></div>
-                <p>Bowl gourmand, sauce fromagère et viande.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Indy Bowl</h3><span class="price">14.90 €</span></div>
-                <p>Bowl indien, épices douces et garniture colorée.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Spicy Bowl</h3><span class="price">14.90 €</span></div>
-                <p>Bowl pimenté pour les amateurs de sensations.</p>
-              </div>
-            </article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Big Bowl</h3><span class="price">16.90 €</span></div><p>Notre plus grand bowl, garniture XXL.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Crousti Bowl</h3><span class="price">14.90 €</span></div><p>Bowl croustillant, tenders et légumes frais.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Mythique Bowl</h3><span class="price">14.90 €</span></div><p>Le classique de la maison, viande et crudités.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Super Bowl</h3><span class="price">16.90 €</span></div><p>Bowl généreux, double garniture.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Veggie Bowl <span class="badge veg">Veggie</span></h3><span class="price">13.90 €</span></div><p>100% végétarien, falafel et légumes grillés.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Kebabowl</h3><span class="price">14.90 €</span></div><p>Bowl kebab, riz, crudités et sauce signature.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Crispy Bowl</h3><span class="price">14.90 €</span></div><p>Poulet croustillant, riz et sauce.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Typik Bowl</h3><span class="price">14.90 €</span></div><p>Recette typique, viande grillée et garniture fraîche.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Cheese Bowl</h3><span class="price">14.90 €</span></div><p>Bowl gourmand, sauce fromagère et viande.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Indy Bowl</h3><span class="price">14.90 €</span></div><p>Bowl indien, épices douces et garniture colorée.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Spicy Bowl</h3><span class="price">14.90 €</span></div><p>Bowl pimenté pour les amateurs de sensations.</p></div></article>
           </div>
         </div>
+
 
         <!-- TACOS SUCRÉS -->
         <div class="menu-section" data-cat="tacos-sucres">
-          <h2 class="cat-title">🍫 Tacos Sucrés</h2>
+          <h2 class="cat-title">Tacos Sucrés</h2>
           <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tacos Nutella</h3><span class="price">5.90 €</span></div>
-                <p>Tortilla grillée garnie de Nutella fondant.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Kinder Bueno</h3><span class="price">7.90 €</span></div>
-                <p>Nutella, Kinder Bueno concassé, chantilly.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>KitKat</h3><span class="price">7.90 €</span></div>
-                <p>Nutella, KitKat croquant, gourmandise pure.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Nutella M&M's</h3><span class="price">7.90 €</span></div>
-                <p>Nutella et M&M's colorés, un classique sucré.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- BOISSONS -->
-        <div class="menu-section" data-cat="boissons">
-          <h2 class="cat-title">🥤 Boissons</h2>
-          <div class="grid grid-3 menu-grid">
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Coca / Fanta / Sprite / Oasis / Hawai</h3><span class="price">2.90 €</span></div>
-                <p>Canette 33cl au choix.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Monster</h3><span class="price">3.90 €</span></div>
-                <p>Boisson énergétique 50cl.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Eau</h3><span class="price">2.50 €</span></div>
-                <p>Eau plate ou gazeuse 50cl.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Coca 1.25L</h3><span class="price">5.90 €</span></div>
-                <p>Bouteille familiale Coca-Cola.</p>
-              </div>
-            </article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Tacos Nutella</h3><span class="price">5.90 €</span></div><p>Tortilla grillée garnie de Nutella fondant.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Kinder Bueno</h3><span class="price">7.90 €</span></div><p>Nutella, Kinder Bueno concassé, chantilly.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>KitKat</h3><span class="price">7.90 €</span></div><p>Nutella, KitKat croquant, gourmandise pure.</p></div></article>
+            <article class="dish-card horizontal"><div class="dish-body"><div class="dish-head"><h3>Nutella M&M's</h3><span class="price">7.90 €</span></div><p>Nutella et M&M's colorés, un classique sucré.</p></div></article>
           </div>
         </div>
 
         <!-- DESSERTS -->
-        <div class="menu-section" data-cat="desserts">
-          <h2 class="cat-title">🍰 Desserts</h2>
+        <div class="menu-section" data-cat="desserts" id="desserts">
+          <h2 class="cat-title">Desserts</h2>
           <div class="grid grid-3 menu-grid">
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Cheesecake Cookies</h3><span class="price">4.50 €</span></div>
-                <p>Cheesecake maison aux cookies.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Cheesecake Citron</h3><span class="price">4.50 €</span></div>
-                <p>Cheesecake frais au citron.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tarte Daim</h3><span class="price">4.50 €</span></div>
-                <p>Tarte au chocolat et éclats de Daim.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tiramisu Caramel Spéculoos</h3><span class="price">4.50 €</span></div>
-                <p>Tiramisu revisité, caramel et spéculoos.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tiramisu Chocolat Noisette</h3><span class="price">4.50 €</span></div>
-                <p>Tiramisu gourmand, chocolat et noisette.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Panini Nutella</h3><span class="price">5.90 €</span></div>
-                <p>Panini chaud garni de Nutella fondant.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Sweety Burger</h3><span class="price">3.90 €</span></div>
-                <p>Mini burger sucré, Nutella et fruits.</p>
-              </div>
-            </article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Cheesecake Cookies</h3><span class="price">4.50 €</span></div><p>Cheesecake maison aux cookies.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Cheesecake Citron</h3><span class="price">4.50 €</span></div><p>Cheesecake frais au citron.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Tarte Daim</h3><span class="price">4.50 €</span></div><p>Tarte au chocolat et éclats de Daim.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Tiramisu Caramel Spéculoos</h3><span class="price">4.50 €</span></div><p>Tiramisu revisité, caramel et spéculoos.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Tiramisu Chocolat Noisette</h3><span class="price">4.50 €</span></div><p>Tiramisu gourmand, chocolat et noisette.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Panini Nutella</h3><span class="price">5.90 €</span></div><p>Panini chaud garni de Nutella fondant.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Sweety Burger</h3><span class="price">3.90 €</span></div><p>Mini burger sucré, Nutella et fruits.</p></div></article>
           </div>
         </div>
+
+        <!-- BOISSONS -->
+        <div class="menu-section" data-cat="boissons" id="boissons">
+          <h2 class="cat-title">Boissons</h2>
+          <div class="grid grid-3 menu-grid">
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Coca / Fanta / Sprite / Oasis</h3><span class="price">2.90 €</span></div><p>Canette 33cl au choix.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Monster</h3><span class="price">3.90 €</span></div><p>Boisson énergétique 50cl.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Eau</h3><span class="price">2.50 €</span></div><p>Eau plate ou gazeuse 50cl.</p></div></article>
+            <article class="dish-card mini"><div class="dish-body"><div class="dish-head"><h3>Coca 1.25L</h3><span class="price">5.90 €</span></div><p>Bouteille familiale Coca-Cola.</p></div></article>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -488,67 +212,38 @@
     <section class="section alt">
       <div class="container info-band">
         <h3>Allergènes & informations</h3>
-        <p>
-          Toutes nos viandes sont halal et certifiées. La majorité de nos plats contiennent du gluten et/ou du lactose.
-          Une option végétarienne est disponible <span class="badge veg">Veggie</span>.
-          N'hésitez pas à nous demander la liste détaillée des allergènes au comptoir.
-        </p>
+        <p>Toutes nos viandes sont halal et certifiées. La majorité de nos plats contiennent du gluten et/ou du lactose. N'hésitez pas à nous demander la liste détaillée des allergènes au comptoir.</p>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container grid grid-4 footer-grid">
       <div>
-        <a href="index.html" class="logo logo-light">
+        <a href="index.html" class="logo">
           <span class="logo-mark" aria-hidden="true"></span>
-          <span class="logo-text">
-            <strong>L'Étoile</strong>
-            <small>Clermont</small>
-          </span>
+          <span class="logo-text"><strong>L'Etoile</strong><small>Clermont</small></span>
         </a>
-        <p class="muted">L'Étoile Clermont vous propose une sélection de succulents tacos, sandwichs, burgers & bowls.</p>
+        <p class="muted" style="margin-top:14px;">Le goût qui fait la différence.</p>
       </div>
       <div>
-        <h4>Nos adresses</h4>
+        <h4>Adresse</h4>
         <div class="footer-locs">
-          <div class="footer-loc-item">
-            <strong>Ballainvilliers</strong>
-            <span>29 Rue Ballainvilliers, 63000 Clermont-Ferrand</span>
-          </div>
-          <div class="footer-loc-item">
-            <strong>Montferrand</strong>
-            <span>2 Rue Debay Facy, 63000 Clermont-Ferrand</span>
-          </div>
+          <div class="footer-loc-item"><strong>Restaurant</strong><span>63 Av. de la République, 63000 Clermont-Ferrand</span></div>
         </div>
       </div>
       <div>
         <h4>Horaires</h4>
-        <ul class="hours">
-          <li><span>Lun – Dim</span><span>10:00 – 01:00</span></li>
-          <li><span>Ouvert</span><span>7j / 7</span></li>
-        </ul>
+        <ul class="hours"><li><span>Lun – Dim</span><span>11:00 – 02:00</span></li><li><span>Ouvert</span><span>7j / 7</span></li></ul>
       </div>
       <div>
         <h4>Contact</h4>
-        <ul class="contact-list">
-          <li><a href="tel:+33473905738">04 73 90 57 38 · Ballainvilliers</a></li>
-          <li><a href="tel:+33463082410">04 63 08 24 10 · Montferrand</a></li>
-          <li><a href="mailto:contact@letoile-clermont.com">contact@letoile-clermont.com</a></li>
-        </ul>
+        <ul class="contact-list"><li><a href="tel:+33473905738">04 73 90 57 38</a></li><li><a href="mailto:contact@letoile-clermont.com">contact@letoile-clermont.com</a></li></ul>
         <div class="socials">
-          <a href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.6 6H17V2.2C16.5 2.1 15.2 2 14 2c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          </a>
-          <a href="#" aria-label="TikTok">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3v3.2c1 .9 2.4 1.5 4 1.6V11c-1.5 0-2.9-.4-4-1.1V15a6 6 0 1 1-6-6v3.1A3 3 0 1 0 13 15V3h3z"/></svg>
-          </a>
-          <a href="#" aria-label="Snapchat">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c3.3 0 5.5 2.4 5.5 5.7 0 1.4-.2 3-.4 4 .5.3 1 .4 1.5.4.7 0 1.2-.3 1.5-.3.3 0 .6.2.6.5 0 .8-2 1.4-2.8 1.6.2.4.5.9 1 1.4.6.6 1.5 1 2.5 1.2.3.1.4.3.4.5 0 .6-1.5 1-3 1.2-.1.2-.2.7-.4 1.1-.1.2-.3.3-.5.3-.4 0-1-.2-1.9-.2-1.3 0-1.6.3-2.5 1-.7.6-1.5 1.1-2.6 1.1-1.1 0-1.9-.5-2.6-1.1-.9-.7-1.2-1-2.5-1-.9 0-1.5.2-1.9.2-.2 0-.4-.1-.5-.3-.2-.4-.3-.9-.4-1.1-1.5-.2-3-.6-3-1.2 0-.2.1-.4.4-.5 1-.2 1.9-.6 2.5-1.2.5-.5.8-1 1-1.4-.8-.2-2.8-.8-2.8-1.6 0-.3.3-.5.6-.5.3 0 .8.3 1.5.3.5 0 1-.1 1.5-.4-.2-1-.4-2.6-.4-4C6.5 4.4 8.7 2 12 2z"/></svg>
-          </a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.6 6H17V2.2C16.5 2.1 15.2 2 14 2c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3v3.2c1 .9 2.4 1.5 4 1.6V11c-1.5 0-2.9-.4-4-1.1V15a6 6 0 1 1-6-6v3.1A3 3 0 1 0 13 15V3h3z"/></svg></a>
         </div>
       </div>
     </div>
@@ -557,7 +252,6 @@
       <p><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></p>
     </div>
   </footer>
-
   <script src="assets/js/main.js"></script>
 </body>
 </html>

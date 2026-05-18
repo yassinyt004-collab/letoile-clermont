@@ -4,14 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L'Étoile Clermont — Tacos, Burgers & Bowls à Clermont-Ferrand</title>
-  <meta name="description" content="L'Étoile Clermont vous propose une sélection de succulents tacos, sandwichs, burgers & bowls. Deux adresses à Clermont-Ferrand : Ballainvilliers & Montferrand." />
+  <meta name="description" content="L'Étoile Clermont vous propose une sélection de succulents tacos, sandwichs, burgers & bowls. 7j/7 à Clermont-Ferrand." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Inter:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          7j/7 de 11h00 à 02h00
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          63 Avenue de la République, 63000 Clermont-Ferrand
+        </span>
+      </div>
+      <div class="top-bar-socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.5 13.4 6 14.6 6H17V2.2C16.5 2.1 15.2 2 14 2c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/></svg>
+        </a>
+        <a href="#" aria-label="Snapchat">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c3.3 0 5.5 2.4 5.5 5.7 0 1.4-.2 3-.4 4 .5.3 1 .4 1.5.4.7 0 1.2-.3 1.5-.3.3 0 .6.2.6.5 0 .8-2 1.4-2.8 1.6.2.4.5.9 1 1.4.6.6 1.5 1 2.5 1.2.3.1.4.3.4.5 0 .6-1.5 1-3 1.2-.1.2-.2.7-.4 1.1-.1.2-.3.3-.5.3-.4 0-1-.2-1.9-.2-1.3 0-1.6.3-2.5 1-.7.6-1.5 1.1-2.6 1.1s-1.9-.5-2.6-1.1c-.9-.7-1.2-1-2.5-1-.9 0-1.5.2-1.9.2-.2 0-.4-.1-.5-.3-.2-.4-.3-.9-.4-1.1-1.5-.2-3-.6-3-1.2 0-.2.1-.4.4-.5 1-.2 1.9-.6 2.5-1.2.5-.5.8-1 1-1.4-.8-.2-2.8-.8-2.8-1.6 0-.3.3-.5.6-.5.3 0 .8.3 1.5.3.5 0 1-.1 1.5-.4-.2-1-.4-2.6-.4-4C6.5 4.4 8.7 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- HEADER -->
   <header class="site-header" id="siteHeader">
@@ -19,7 +46,7 @@
       <a href="index.html" class="logo" aria-label="L'Étoile Clermont - Accueil">
         <span class="logo-mark" aria-hidden="true"></span>
         <span class="logo-text">
-          <strong>L'Étoile</strong>
+          <strong>L'Etoile</strong>
           <small>Clermont</small>
         </span>
       </a>
@@ -31,11 +58,18 @@
       <nav id="primaryNav" class="primary-nav" aria-label="Menu principal">
         <ul>
           <li><a href="index.html" class="active">Accueil</a></li>
-          <li><a href="menu.html">Notre Carte</a></li>
-          <li><a href="about.html">Notre histoire</a></li>
+          <li><a href="menu.html#tacos-signatures">Tacos</a></li>
+          <li><a href="menu.html#burgers">Burgers</a></li>
+          <li><a href="menu.html#bowls">Bowls</a></li>
+          <li><a href="menu.html#frites">Frites & Barquettes</a></li>
+          <li><a href="menu.html#desserts">Desserts</a></li>
+          <li><a href="menu.html#boissons">Boissons</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <a class="btn btn-primary nav-cta" href="contact.html#commander">Commander</a>
+        <a class="btn btn-primary nav-cta" href="contact.html#commander">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2l3 7H4l3-7z"/><path d="M3 9h18l-2 11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L3 9z"/></svg>
+          Commander
+        </a>
       </nav>
     </div>
   </header>
@@ -45,209 +79,177 @@
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="eyebrow">★ Clermont-Ferrand · Depuis 2012</p>
-        <h1>
-          Tacos, Burgers<br/>
-          <span class="accent">& Bowls signatures.</span>
-        </h1>
-        <p class="lead">
-          L'Étoile Clermont vous propose une sélection de succulents tacos, sandwichs, burgers
-          et bowls — préparés sur place, à emporter ou en livraison.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="menu.html">Voir la carte</a>
-          <a class="btn btn-outline" href="contact.html#commander">
-            <span>Commander</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <ul class="hero-meta">
-          <li><strong>2 adresses</strong><span>Ballainvilliers & Montferrand</span></li>
-          <li><strong>7j/7</strong><span>De 10h00 à 1h00</span></li>
-          <li><strong>100% halal</strong><span>Viandes certifiées</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- LOCATIONS STRIP -->
-    <section class="locations" aria-label="Nos adresses">
-      <div class="container">
-        <div class="locations-grid">
-          <div class="location-card">
-            <h3>L'Étoile – Ballainvilliers</h3>
-            <p class="addr">29 Rue Ballainvilliers<br/>63000 Clermont-Ferrand</p>
-            <a class="phone" href="tel:+33473905738" title="04 73 90 57 38">04.73.90.57.38</a>
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <span class="script-text">Le goût qui fait la différence</span>
+          <h1>
+            <span class="white">L'Etoile</span>
+            <span class="gold">Clermont</span>
+          </h1>
+          <p class="lead">
+            Tacos, Burgers, Bowls et plus encore…<br/>
+            Des produits frais, des recettes uniques<br/>
+            et toujours avec le sourire !
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="contact.html#commander">Commander en ligne</a>
+            <a class="btn btn-outline" href="menu.html">Voir le menu</a>
           </div>
-
-          <div class="locations-center">
-            <div class="star-emblem" aria-hidden="true"></div>
-            <small>L'Étoile Tacos</small>
-            <span class="open-hours">Ouvert 7j/7 · 10h00 – 1h00</span>
-          </div>
-
-          <div class="location-card">
-            <h3>L'Étoile – Montferrand</h3>
-            <p class="addr">2 Rue Debay Facy<br/>63000 Clermont-Ferrand</p>
-            <a class="phone" href="tel:+33463082410" title="04 63 08 24 10">04.63.08.24.10</a>
+          <div class="hero-reviews">
+            <div class="hero-avatars">
+              <span>A</span><span>M</span><span>S</span><span>L</span>
+            </div>
+            <div>
+              <div class="stars">★★★★★</div>
+              <span class="review-text">4,8/5 sur plus de 1200 avis</span>
+            </div>
           </div>
         </div>
+
+        <!-- Right: Food visuals -->
+        <div class="hero-visual">
+          <div class="hero-food-main">
+            <div class="food-item item-1">
+              <span class="food-label">Tacos</span>
+            </div>
+            <div class="food-item item-2">
+              <span class="food-label">Burger</span>
+            </div>
+            <div class="food-item item-3">
+              <span class="food-label">Frites</span>
+            </div>
+          </div>
+          <div class="phone-mockup">
+            <div class="phone-mockup-inner">
+              <div style="text-align:center;margin-top:20px;">
+                <div style="width:20px;height:20px;background:var(--c-gold);border-radius:50%;margin:0 auto 6px;"></div>
+                <div style="font-size:7px;color:#fff;">L'ETOILE</div>
+                <div style="font-size:5px;color:var(--c-gold);margin-top:2px;">COMMANDER</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- FEATURES -->
-    <section class="features section">
+    <!-- FEATURES STRIP -->
+    <section class="features-strip">
       <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Pourquoi L'Étoile</p>
-          <h2>Le goût qui fait briller Clermont</h2>
-        </header>
-        <div class="grid grid-3">
-          <article class="feature-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4 6v6c0 5 3.5 9.3 8 10 4.5-.7 8-5 8-10V6l-8-4z"/><path d="M9 12l2 2 4-4"/></svg>
-            </div>
-            <h3>Viande halal certifiée</h3>
-            <p>Bœuf, veau et poulet sélectionnés auprès de partenaires français de confiance.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9z"/><path d="M12 7v5l3 2"/></svg>
-            </div>
-            <h3>Frais, chaque jour</h3>
-            <p>Légumes croquants, sauces préparées le matin même, viandes marinées 24h.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13l3 5v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M3 7v10h2"/></svg>
-            </div>
-            <h3>À emporter & livraison</h3>
-            <p>Commande au comptoir, à emporter ou livraison via Uber Eats et Deliveroo.</p>
-          </article>
+        <div class="feature-pill">
+          <div class="fp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 6v6c0 5 3.5 9.3 8 10 4.5-.7 8-5 8-10V6l-8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="fp-text">
+            <h4>Produits Frais</h4>
+            <p>Qualité garantie</p>
+          </div>
+        </div>
+        <div class="feature-pill">
+          <div class="fp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9z"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <div class="fp-text">
+            <h4>Fait Maison</h4>
+            <p>Recettes uniques</p>
+          </div>
+        </div>
+        <div class="feature-pill">
+          <div class="fp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13l3 5v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M3 7v10h2"/></svg>
+          </div>
+          <div class="fp-text">
+            <h4>Livraison Rapide</h4>
+            <p>À Clermont-Ferrand</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- MENU PREVIEW -->
-    <section class="menu-preview section alt">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Notre carte</p>
-          <h2>Les incontournables</h2>
-          <p class="section-sub">Une sélection de nos plats les plus aimés. La carte complète vous attend.</p>
-        </header>
-
-        <div class="grid grid-3 menu-grid">
-          <article class="dish-card">
-            <div class="dish-img" data-img="tacos"></div>
-            <div class="dish-body">
-              <div class="dish-head">
-                <h3>O'Merveille</h3>
-                <span class="price">10.00 €</span>
-              </div>
-              <p>Tortilla grillée, viande au choix, frites, fromage fondu et sauce fromagère maison.</p>
-              <span class="tag">Best-seller</span>
-            </div>
-          </article>
-
-          <article class="dish-card">
-            <div class="dish-img" data-img="assiette"></div>
-            <div class="dish-body">
-              <div class="dish-head">
-                <h3>Big Bowl</h3>
-                <span class="price">16.90 €</span>
-              </div>
-              <p>Bowl généreux garni de viande marinée, riz, crudités fraîches et sauce signature.</p>
-              <span class="tag">Généreux</span>
-            </div>
-          </article>
-
-          <article class="dish-card">
-            <div class="dish-img" data-img="burger"></div>
-            <div class="dish-body">
-              <div class="dish-head">
-                <h3>Cheese Burger</h3>
-                <span class="price">7.90 €</span>
-              </div>
-              <p>Pain brioché toasté, steak haché, cheddar fondant, salade, tomate et sauce maison.</p>
-              <span class="tag">Classique</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="center mt-32">
-          <a class="btn btn-primary" href="menu.html">Découvrir toute la carte</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- DELIVERY PARTNERS -->
+    <!-- CATEGORIES -->
     <section class="section">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Livraison</p>
-          <h2>Commandez en ligne</h2>
-          <p class="section-sub">Livraison rapide via nos partenaires sur Clermont-Ferrand et alentours.</p>
+          <p class="eyebrow">Notre Menu</p>
+          <h2>Découvrez nos catégories</h2>
+          <div class="gold-line"></div>
         </header>
-        <div class="partners">
-          <a class="partner-pill" href="#" target="_blank" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 7h13l3 5v5h-2a3 3 0 0 1-6 0H8a3 3 0 0 1-6 0H1V9a2 2 0 0 1 2-2zm14 7h-3V9h2.5l1.5 2.5V14z"/></svg>
-            Uber Eats
-          </a>
-          <a class="partner-pill dark" href="#" target="_blank" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            Deliveroo
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <!-- STORY TEASER -->
-    <section class="story section alt">
-      <div class="container grid grid-2 align-center">
-        <div class="story-media" aria-hidden="true">
-          <div class="story-img" data-img="grill"></div>
-          <div class="story-badge">
-            <strong>10+</strong>
-            <span>années de passion</span>
-          </div>
-        </div>
-        <div>
-          <p class="eyebrow">Notre histoire</p>
-          <h2>Une famille, une étoile, une obsession&nbsp;: le goût.</h2>
-          <p>
-            Tout a commencé en 2012 dans une petite boutique de Montferrand. Aujourd'hui,
-            L'Étoile est devenu une adresse incontournable pour les amateurs de cuisine
-            généreuse à Clermont-Ferrand. Notre secret&nbsp;? Des produits frais, une marinade qui repose
-            une nuit entière, et beaucoup d'amour.
-          </p>
-          <a class="btn btn-outline" href="about.html">Lire notre histoire</a>
+        <div class="grid grid-3">
+          <article class="cat-card">
+            <div class="cat-card-img" data-cat="tacos"></div>
+            <div class="cat-card-body">
+              <h3>Tacos</h3>
+              <p>Signatures & à composer</p>
+              <a class="btn btn-primary" href="menu.html#tacos-signatures">Découvrir</a>
+            </div>
+          </article>
+          <article class="cat-card">
+            <div class="cat-card-img" data-cat="burgers"></div>
+            <div class="cat-card-body">
+              <h3>Burgers</h3>
+              <p>Classiques & gourmands</p>
+              <a class="btn btn-primary" href="menu.html#burgers">Découvrir</a>
+            </div>
+          </article>
+          <article class="cat-card">
+            <div class="cat-card-img" data-cat="bowls"></div>
+            <div class="cat-card-body">
+              <h3>Bowls</h3>
+              <p>Frais & généreux</p>
+              <a class="btn btn-primary" href="menu.html#bowls">Découvrir</a>
+            </div>
+          </article>
+          <article class="cat-card">
+            <div class="cat-card-img" data-cat="frites"></div>
+            <div class="cat-card-body">
+              <h3>Frites</h3>
+              <p>Fromagères & loaded</p>
+              <a class="btn btn-primary" href="menu.html#frites">Découvrir</a>
+            </div>
+          </article>
+          <article class="cat-card">
+            <div class="cat-card-img" data-cat="desserts"></div>
+            <div class="cat-card-body">
+              <h3>Desserts</h3>
+              <p>Cheesecakes & tiramisu</p>
+              <a class="btn btn-primary" href="menu.html#desserts">Découvrir</a>
+            </div>
+          </article>
+          <article class="cat-card">
+            <div class="cat-card-img" data-cat="boissons"></div>
+            <div class="cat-card-body">
+              <h3>Boissons</h3>
+              <p>Fraîches & énergétiques</p>
+              <a class="btn btn-primary" href="menu.html#boissons">Découvrir</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="testimonials section">
+    <section class="section alt">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Ils en parlent</p>
-          <h2>Plus qu'un tacos, un rituel</h2>
+          <p class="eyebrow">Avis clients</p>
+          <h2>Ce qu'ils en disent</h2>
+          <div class="gold-line"></div>
         </header>
 
         <div class="grid grid-3">
           <figure class="quote-card">
-            <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <div class="stars">★★★★★</div>
             <blockquote>« Le meilleur tacos de Clermont-Ferrand, sans hésiter. La sauce fromagère est une tuerie. »</blockquote>
             <figcaption>— Camille D.</figcaption>
           </figure>
           <figure class="quote-card">
-            <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <div class="stars">★★★★★</div>
             <blockquote>« Viande tendre, galette croustillante, frites maison. Tout est parfait chez L'Étoile. »</blockquote>
             <figcaption>— Mehdi R.</figcaption>
           </figure>
           <figure class="quote-card">
-            <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
-            <blockquote>« Accueil au top et portions généreuses. Mon adresse du vendredi soir à Montferrand. »</blockquote>
+            <div class="stars">★★★★★</div>
+            <blockquote>« Accueil au top et portions généreuses. Mon adresse du vendredi soir ! »</blockquote>
             <figcaption>— Léa B.</figcaption>
           </figure>
         </div>
@@ -258,8 +260,8 @@
     <section class="cta-band">
       <div class="container cta-inner">
         <div>
-          <h2>Une faim de loup&nbsp;?</h2>
-          <p>Commandez en ligne ou passez nous voir à Ballainvilliers ou Montferrand.</p>
+          <h2>Une faim de loup ?</h2>
+          <p>Commandez en ligne ou passez nous voir à Clermont-Ferrand.</p>
         </div>
         <div class="cta-actions">
           <a class="btn btn-primary" href="contact.html#commander">Commander</a>
@@ -273,40 +275,35 @@
   <footer class="site-footer">
     <div class="container grid grid-4 footer-grid">
       <div>
-        <a href="index.html" class="logo logo-light">
+        <a href="index.html" class="logo">
           <span class="logo-mark" aria-hidden="true"></span>
           <span class="logo-text">
-            <strong>L'Étoile</strong>
+            <strong>L'Etoile</strong>
             <small>Clermont</small>
           </span>
         </a>
-        <p class="muted">L'Étoile Clermont vous propose une sélection de succulents tacos, sandwichs, burgers & bowls.</p>
+        <p class="muted" style="margin-top:14px;">Tacos, Burgers, Bowls et plus encore. Le goût qui fait la différence.</p>
       </div>
       <div>
-        <h4>Nos adresses</h4>
+        <h4>Adresse</h4>
         <div class="footer-locs">
           <div class="footer-loc-item">
-            <strong>Ballainvilliers</strong>
-            <span>29 Rue Ballainvilliers, 63000 Clermont-Ferrand</span>
-          </div>
-          <div class="footer-loc-item">
-            <strong>Montferrand</strong>
-            <span>2 Rue Debay Facy, 63000 Clermont-Ferrand</span>
+            <strong>Restaurant</strong>
+            <span>63 Av. de la République, 63000 Clermont-Ferrand</span>
           </div>
         </div>
       </div>
       <div>
         <h4>Horaires</h4>
         <ul class="hours">
-          <li><span>Lun – Dim</span><span>10:00 – 01:00</span></li>
+          <li><span>Lun – Dim</span><span>11:00 – 02:00</span></li>
           <li><span>Ouvert</span><span>7j / 7</span></li>
         </ul>
       </div>
       <div>
         <h4>Contact</h4>
         <ul class="contact-list">
-          <li><a href="tel:+33473905738">04 73 90 57 38 · Ballainvilliers</a></li>
-          <li><a href="tel:+33463082410">04 63 08 24 10 · Montferrand</a></li>
+          <li><a href="tel:+33473905738">04 73 90 57 38</a></li>
           <li><a href="mailto:contact@letoile-clermont.com">contact@letoile-clermont.com</a></li>
         </ul>
         <div class="socials">
@@ -320,7 +317,7 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3v3.2c1 .9 2.4 1.5 4 1.6V11c-1.5 0-2.9-.4-4-1.1V15a6 6 0 1 1-6-6v3.1A3 3 0 1 0 13 15V3h3z"/></svg>
           </a>
           <a href="#" aria-label="Snapchat">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c3.3 0 5.5 2.4 5.5 5.7 0 1.4-.2 3-.4 4 .5.3 1 .4 1.5.4.7 0 1.2-.3 1.5-.3.3 0 .6.2.6.5 0 .8-2 1.4-2.8 1.6.2.4.5.9 1 1.4.6.6 1.5 1 2.5 1.2.3.1.4.3.4.5 0 .6-1.5 1-3 1.2-.1.2-.2.7-.4 1.1-.1.2-.3.3-.5.3-.4 0-1-.2-1.9-.2-1.3 0-1.6.3-2.5 1-.7.6-1.5 1.1-2.6 1.1-1.1 0-1.9-.5-2.6-1.1-.9-.7-1.2-1-2.5-1-.9 0-1.5.2-1.9.2-.2 0-.4-.1-.5-.3-.2-.4-.3-.9-.4-1.1-1.5-.2-3-.6-3-1.2 0-.2.1-.4.4-.5 1-.2 1.9-.6 2.5-1.2.5-.5.8-1 1-1.4-.8-.2-2.8-.8-2.8-1.6 0-.3.3-.5.6-.5.3 0 .8.3 1.5.3.5 0 1-.1 1.5-.4-.2-1-.4-2.6-.4-4C6.5 4.4 8.7 2 12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c3.3 0 5.5 2.4 5.5 5.7 0 1.4-.2 3-.4 4 .5.3 1 .4 1.5.4.7 0 1.2-.3 1.5-.3.3 0 .6.2.6.5 0 .8-2 1.4-2.8 1.6.2.4.5.9 1 1.4.6.6 1.5 1 2.5 1.2.3.1.4.3.4.5 0 .6-1.5 1-3 1.2-.1.2-.2.7-.4 1.1-.1.2-.3.3-.5.3-.4 0-1-.2-1.9-.2-1.3 0-1.6.3-2.5 1-.7.6-1.5 1.1-2.6 1.1s-1.9-.5-2.6-1.1c-.9-.7-1.2-1-2.5-1-.9 0-1.5.2-1.9.2-.2 0-.4-.1-.5-.3-.2-.4-.3-.9-.4-1.1-1.5-.2-3-.6-3-1.2 0-.2.1-.4.4-.5 1-.2 1.9-.6 2.5-1.2.5-.5.8-1 1-1.4-.8-.2-2.8-.8-2.8-1.6 0-.3.3-.5.6-.5.3 0 .8.3 1.5.3.5 0 1-.1 1.5-.4-.2-1-.4-2.6-.4-4C6.5 4.4 8.7 2 12 2z"/></svg>
           </a>
         </div>
       </div>
