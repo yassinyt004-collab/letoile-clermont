@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Carte — Kebab 37</title>
-  <meta name="description" content="Découvrez la carte de Kebab 37 : dürüm, assiettes, tacos, burgers, menus enfants et boissons." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu – Kebab 37 Tiznit</title>
+  <meta name="description" content="Consultez le menu complet de Kebab 37 à Tiznit : kebabs, burgers, tacos, salades, boissons et plus encore.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="https://kebab37.com/wp-content/uploads/2025/06/cropped-LOGO-01-removebg-preview-32x32.png" sizes="32x32">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -16,8 +17,7 @@
   <header class="site-header" id="siteHeader">
     <div class="container nav-wrap">
       <a href="index.html" class="logo" aria-label="Kebab 37 - Accueil">
-        <span class="logo-mark">K</span>
-        <span class="logo-text">Kebab<span class="logo-num">37</span></span>
+        <img src="https://kebab37.com/wp-content/uploads/2025/12/logo-kebeb-can.png" alt="Kebab 37" class="logo-img">
       </a>
       <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primaryNav">
         <span></span><span></span><span></span>
@@ -25,291 +25,72 @@
       <nav id="primaryNav" class="primary-nav" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="menu.html" class="active">Carte</a></li>
-          <li><a href="about.html">Notre histoire</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">À propos</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <a class="btn btn-primary nav-cta" href="contact.html#commander">Commander</a>
+        <a class="btn btn-primary nav-cta" href="menu.html">Voir le Menu</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- PAGE HEADER -->
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">La carte</p>
-        <h1>Tout est cuisiné <span class="accent">sur place</span>.</h1>
-        <p class="lead">Des recettes simples et bien faites. Demandez votre sauce, choisissez votre piquant — on s'occupe du reste.</p>
+        <h1>Notre Menu</h1>
+        <p class="lead">Kebabs, tacos, burgers, salades… Tout est préparé frais à la commande. Consultez notre carte complète ci-dessous.</p>
       </div>
     </section>
 
-    <!-- MENU FILTER -->
     <section class="section">
-      <div class="container">
-        <div class="menu-filters" role="tablist" aria-label="Catégories de la carte">
-          <button class="filter active" role="tab" data-filter="all">Tout</button>
-          <button class="filter" role="tab" data-filter="sandwichs">Sandwichs</button>
-          <button class="filter" role="tab" data-filter="assiettes">Assiettes</button>
-          <button class="filter" role="tab" data-filter="tacos">Tacos</button>
-          <button class="filter" role="tab" data-filter="burgers">Burgers</button>
-          <button class="filter" role="tab" data-filter="enfant">Menu enfant</button>
-          <button class="filter" role="tab" data-filter="boissons">Boissons</button>
-          <button class="filter" role="tab" data-filter="desserts">Desserts</button>
-        </div>
-
-        <!-- SANDWICHS -->
-        <div class="menu-section" data-cat="sandwichs">
-          <h2 class="cat-title">Sandwichs</h2>
-          <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="durum"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Dürüm Kebab</h3><span class="price">8.50 €</span></div>
-                <p>Galette pétrie maison, bœuf mariné, crudités, sauce au choix.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="galette"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Galette Poulet</h3><span class="price">8.50 €</span></div>
-                <p>Émincé de poulet mariné aux épices, fromage frais, salade, oignons rouges.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="pita"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Pita Mixte</h3><span class="price">9.50 €</span></div>
-                <p>Pain pita moelleux, mix bœuf et poulet, crudités, sauce signature.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="vegetarien"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Falafel Wrap <span class="badge veg">Veggie</span></h3><span class="price">8.00 €</span></div>
-                <p>Falafels croustillants, houmous, crudités, sauce au yaourt et menthe.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- ASSIETTES -->
-        <div class="menu-section" data-cat="assiettes">
-          <h2 class="cat-title">Assiettes</h2>
-          <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="assiette"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Assiette Kebab</h3><span class="price">14.00 €</span></div>
-                <p>Viande, frites maison, salade composée, sauce blanche signature.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="mixte"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Assiette Mixte</h3><span class="price">16.00 €</span></div>
-                <p>Bœuf, poulet et köfte grillés, riz pilaf ou frites, salade.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="kofte"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Assiette Köfte</h3><span class="price">15.00 €</span></div>
-                <p>Boulettes de viande aux herbes, riz, salade, sauce yaourt.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="poulet"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Assiette Poulet</h3><span class="price">14.00 €</span></div>
-                <p>Émincé de poulet mariné, frites, salade, sauce maison.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- TACOS -->
-        <div class="menu-section" data-cat="tacos">
-          <h2 class="cat-title">Tacos</h2>
-          <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="tacos"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tacos M (1 viande)</h3><span class="price">8.50 €</span></div>
-                <p>Tortilla grillée, viande au choix, frites, sauce fromagère.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="tacosL"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tacos L (2 viandes)</h3><span class="price">10.50 €</span></div>
-                <p>Double tortilla, deux viandes, frites, sauce fromagère, sauce au choix.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="tacosXL"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tacos XL (3 viandes)</h3><span class="price">13.00 €</span></div>
-                <p>Pour les grandes faims. Trois viandes, frites, fromage fondu.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- BURGERS -->
-        <div class="menu-section" data-cat="burgers">
-          <h2 class="cat-title">Burgers</h2>
-          <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="burger"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Le Tourangeau</h3><span class="price">11.00 €</span></div>
-                <p>Steak haché 150g, cheddar, oignons confits, sauce burger maison.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="cheese"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Double Cheese</h3><span class="price">12.50 €</span></div>
-                <p>Deux steaks, double cheddar, salade, tomate, oignons, sauce.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="chicken"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Chicken Crispy</h3><span class="price">11.50 €</span></div>
-                <p>Filet de poulet pané croustillant, salade, sauce miel-moutarde.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- ENFANT -->
-        <div class="menu-section" data-cat="enfant">
-          <h2 class="cat-title">Menu enfant</h2>
-          <div class="grid grid-2 menu-grid">
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="kid"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Menu P'tit Loup</h3><span class="price">7.50 €</span></div>
-                <p>Mini sandwich ou nuggets, frites, compote, jus de fruits.</p>
-              </div>
-            </article>
-            <article class="dish-card horizontal">
-              <div class="dish-img" data-img="nuggets"></div>
-              <div class="dish-body">
-                <div class="dish-head"><h3>Nuggets x6</h3><span class="price">5.00 €</span></div>
-                <p>Six nuggets de poulet, sauce ketchup ou barbecue.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- BOISSONS -->
-        <div class="menu-section" data-cat="boissons">
-          <h2 class="cat-title">Boissons</h2>
-          <div class="grid grid-3 menu-grid">
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Soda 33cl</h3><span class="price">2.50 €</span></div>
-                <p>Coca, Coca Zero, Fanta, Sprite, Oasis.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Ayran</h3><span class="price">2.50 €</span></div>
-                <p>Yaourt à boire turc traditionnel.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Eau plate / gazeuse</h3><span class="price">2.00 €</span></div>
-                <p>50cl.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Thé à la menthe</h3><span class="price">2.50 €</span></div>
-                <p>Servi chaud, tradition orientale.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- DESSERTS -->
-        <div class="menu-section" data-cat="desserts">
-          <h2 class="cat-title">Desserts</h2>
-          <div class="grid grid-3 menu-grid">
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Baklava</h3><span class="price">3.50 €</span></div>
-                <p>Pâte filo, pistache, miel — la pâtisserie reine.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Tiramisu</h3><span class="price">4.50 €</span></div>
-                <p>Mascarpone, café, cacao amer.</p>
-              </div>
-            </article>
-            <article class="dish-card mini">
-              <div class="dish-body">
-                <div class="dish-head"><h3>Glace 2 boules</h3><span class="price">4.00 €</span></div>
-                <p>Vanille, chocolat, pistache, fraise.</p>
-              </div>
-            </article>
-          </div>
+      <div class="container text-center">
+        <div class="menu-card-grid grid grid-2">
+          <img src="https://kebab37.com/wp-content/uploads/2026/04/menu1-737x1024.jpeg" alt="Menu Kebab 37 page 1" loading="lazy" class="menu-page-img">
+          <img src="https://kebab37.com/wp-content/uploads/2026/04/menu2-737x1024.jpeg" alt="Menu Kebab 37 page 2" loading="lazy" class="menu-page-img">
         </div>
       </div>
     </section>
 
-    <!-- ALLERGENS -->
     <section class="section alt">
-      <div class="container info-band">
-        <h3>Allergènes & informations</h3>
-        <p>
-          Toutes nos viandes sont halal et certifiées. La majorité de nos plats contiennent du gluten et/ou du lactose.
-          Une option végétarienne est disponible <span class="badge veg">Veggie</span>.
-          N'hésitez pas à nous demander la liste détaillée des allergènes au comptoir.
-        </p>
+      <div class="container text-center">
+        <h2>Envie de commander ?</h2>
+        <p class="lead">Passez votre commande directement via WhatsApp pour un retrait rapide.</p>
+        <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=212660781515" target="_blank" rel="noopener">Commander via WhatsApp</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container grid grid-4 footer-grid">
-      <div>
-        <a href="index.html" class="logo logo-light">
-          <span class="logo-mark">K</span>
-          <span class="logo-text">Kebab<span class="logo-num">37</span></span>
-        </a>
-        <p class="muted">Le kebab artisanal au cœur de Tours. Frais, généreux, authentique.</p>
+    <div class="container grid grid-3 footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="https://kebab37.com/wp-content/uploads/2025/06/cropped-LOGO-01-removebg-preview.png" alt="Kebab 37" class="footer-logo"></a>
       </div>
       <div>
-        <h4>Adresse</h4>
-        <p class="muted">37 rue Colbert<br/>37000 Tours, France</p>
-      </div>
-      <div>
-        <h4>Horaires</h4>
-        <ul class="hours">
-          <li><span>Lun – Jeu</span><span>11:30 – 22:30</span></li>
-          <li><span>Ven – Sam</span><span>11:30 – 00:00</span></li>
-          <li><span>Dimanche</span><span>17:00 – 22:30</span></li>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
-        <ul class="contact-list">
-          <li><a href="tel:+33247000000">02 47 00 00 00</a></li>
-          <li><a href="mailto:contact@kebab37.com">contact@kebab37.com</a></li>
+        <h4>Suivez-nous</h4>
+        <ul>
+          <li><a href="mailto:contact@kebab37.com">Email : contact@kebab37.com</a></li>
+          <li><a href="tel:0520-635025">Telephone : 0520-635025</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=212660781515" target="_blank" rel="noopener">WhatsApp : 0660781515</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© <span id="year"></span> Kebab 37 — Tous droits réservés.</p>
-      <p><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></p>
+      <p>Copyright © <span id="year"></span> - made with <span style="color:red;">❤</span> by <a href="https://soufianemouahhidi.com/" target="_blank" rel="noopener">Soufiane Mouahhidi</a>, All Rights Reserved.</p>
     </div>
   </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=212660781515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter via WhatsApp">
+    <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0C7.165 0 .003 7.16.003 15.997c0 2.82.737 5.573 2.14 7.998L.003 32l8.212-2.094A15.96 15.96 0 0016.004 32C24.84 32 32 24.84 32 15.997 32 7.16 24.84 0 16.004 0zm0 29.39a13.38 13.38 0 01-6.82-1.87l-.49-.29-5.07 1.33 1.35-4.94-.32-.5a13.33 13.33 0 01-2.04-7.12c0-7.38 6.01-13.39 13.39-13.39S29.39 8.62 29.39 16s-6.01 13.39-13.39 13.39zm7.34-10.02c-.4-.2-2.37-1.17-2.74-1.3-.37-.14-.64-.2-.91.2-.27.4-1.04 1.3-1.28 1.57-.23.27-.47.3-.87.1-.4-.2-1.69-.62-3.22-1.98-1.19-1.06-1.99-2.37-2.23-2.77-.23-.4-.02-.62.18-.82.18-.18.4-.47.6-.7.2-.24.27-.4.4-.67.14-.27.07-.5-.03-.7-.1-.2-.91-2.2-1.25-3.01-.33-.79-.66-.68-.91-.7-.23-.01-.5-.01-.77-.01-.27 0-.7.1-1.07.5-.37.4-1.4 1.37-1.4 3.34 0 1.97 1.43 3.87 1.63 4.14.2.27 2.82 4.3 6.83 6.03.96.41 1.7.66 2.28.84.96.3 1.83.26 2.52.16.77-.12 2.37-.97 2.71-1.9.33-.94.33-1.74.23-1.9-.1-.17-.37-.27-.77-.47z"/></svg>
+  </a>
 
   <script src="assets/js/main.js"></script>
 </body>
