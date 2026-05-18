@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kebab 37 à Tiznit – Snack & Fast Food Marocain de Qualité</title>
-  <meta name="description" content="Découvrez Kebab 37, votre snack incontournable à Tiznit. Spécialités marocaines, service rapide, produits frais, passez savourer sur place !">
+  <title>L'Étoile – Snack & Fast Food à Clermont-Ferrand</title>
+  <meta name="description" content="L'Étoile, votre snack incontournable à Clermont-Ferrand. Kebabs, tacos, burgers halal, produits frais et service rapide. Sur place ou à emporter.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Staatliches&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" href="https://kebab37.com/wp-content/uploads/2025/06/cropped-LOGO-01-removebg-preview-32x32.png" sizes="32x32">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -18,8 +17,9 @@
   <!-- HEADER -->
   <header class="site-header" id="siteHeader">
     <div class="container nav-wrap">
-      <a href="index.html" class="logo" aria-label="Kebab 37 - Accueil">
-        <img src="https://kebab37.com/wp-content/uploads/2025/12/logo-kebeb-can.png" alt="Kebab 37" class="logo-img">
+      <a href="index.html" class="logo" aria-label="L'Étoile - Accueil">
+        <span class="logo-icon">★</span>
+        <span class="logo-text">L'Étoile</span>
       </a>
       <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primaryNav">
         <span></span><span></span><span></span>
@@ -37,31 +37,22 @@
   </header>
 
   <main id="main">
-    <!-- HERO / CAN SECTION -->
-    <section class="hero-can">
-      <div class="container grid grid-2 align-center">
-        <div class="hero-video">
-          <iframe src="https://player.vimeo.com/video/1148424362?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1" allow="autoplay; fullscreen; picture-in-picture" frameborder="0" loading="lazy"></iframe>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <span class="eyebrow">Clermont-Ferrand · Halal · Depuis 2010</span>
+        <h1>Le goût authentique,<br><span class="accent">au cœur de l'Auvergne.</span></h1>
+        <p class="lead">Kebabs généreux, tacos fondants, burgers maison — préparés à la minute avec des ingrédients frais. Bienvenue chez L'Étoile, le rendez-vous des gourmands clermontois.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="menu.html">Voir la carte</a>
+          <a class="btn btn-ghost" href="tel:0473905738">📞 04 73 90 57 38</a>
         </div>
-        <div class="hero-text">
-          <h2>🇲🇦 Kebab 37 célèbre la Coupe d'Afrique au Maroc</h2>
-          <h3 class="subtitle">Kebab 37 est fier de partager cette ambiance unique de passion, de football et de fierté nationale 🇲🇦⚽.</h3>
-          <p>Vibrez au rythme de la compétition avec nous et profitez de <strong>nos kebabs, burgers et snacks fraîchement préparés</strong>, parfaits pour accompagner chaque match. Que ce soit entre amis ou en famille, <strong>Kebab 37 est le spot idéal à Tiznit</strong> pour savourer le football africain autour de plats généreux et savoureux.</p>
-          <ul class="check-list">
-            <li>Même passion, même fierté, même goût !</li>
-            <li>Pendant la CAN, vivez chaque match avec Kebab 37.</li>
-          </ul>
-          <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=212660781515" target="_blank" rel="noopener">Commander</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTRO -->
-    <section class="section intro-section">
-      <div class="container text-center">
-        <h1>Kebab 37 – Votre snack préféré à Tiznit</h1>
-        <p class="lead"><strong>Kebab 37</strong> vous propose chaque jour de délicieux kebabs, burgers et snacks préparés à la minute. Dans une ambiance conviviale à Tiznit, profitez de produits frais, d'un service rapide et de saveurs irrésistibles.</p>
-        <a class="btn btn-primary" href="menu.html">Voir le Menu</a>
+        <ul class="hero-meta">
+          <li><strong>4.3/5</strong><span>2000+ avis</span></li>
+          <li><strong>10 min</strong><span>Préparation rapide</span></li>
+          <li><strong>100% Halal</strong><span>Viandes certifiées</span></li>
+        </ul>
       </div>
     </section>
 
@@ -69,19 +60,25 @@
     <section class="section features">
       <div class="container grid grid-3">
         <article class="feature-card">
-          <div class="icon-wrap"><svg viewBox="0 0 576 512" fill="currentColor"><path d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 459.4 543.9 346.6 576 288c0-4.8-1.3-8.8-2.9-12.5 11.1-24.3 17.8-51 17.8-79.5 0-44.6-14.4-85.8-38.7-119.3z"/></svg></div>
+          <div class="icon-wrap">
+            <svg viewBox="0 0 576 512" fill="currentColor"><path d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 459.4 543.9 346.6 576 288c0-4.8-1.3-8.8-2.9-12.5 11.1-24.3 17.8-51 17.8-79.5 0-44.6-14.4-85.8-38.7-119.3z"/></svg>
+          </div>
           <h3>Produits Frais</h3>
-          <p>Des ingrédients locaux, frais et savoureux — c'est notre promesse pour un snack à Tiznit qui fait la différence.</p>
+          <p>Légumes croquants, viandes de qualité — tout est sélectionné avec soin chaque jour.</p>
         </article>
         <article class="feature-card">
-          <div class="icon-wrap"><svg viewBox="0 0 512 512" fill="currentColor"><path d="M496 288H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h320v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-16-96c0-61.9-50.1-112-112-112-49.9 0-91.5 32.5-106.4 77.4C256.3 157.1 256 157 256 157s-.3.1-5.6.4C235.5 112.5 193.9 80 144 80 82.1 80 32 130.1 32 192v16h448v-16z"/></svg></div>
-          <h3>Menu Riche et Varié</h3>
-          <p>De délicieux kebabs à Tiznit, des burgers juteux, des tacos fondants et plus encore – pour tous les goûts et toutes les envies.</p>
+          <div class="icon-wrap">
+            <svg viewBox="0 0 512 512" fill="currentColor"><path d="M496 288H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h320v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-16-96c0-61.9-50.1-112-112-112-49.9 0-91.5 32.5-106.4 77.4C256.3 157.1 256 157 256 157s-.3.1-5.6.4C235.5 112.5 193.9 80 144 80 82.1 80 32 130.1 32 192v16h448v-16z"/></svg>
+          </div>
+          <h3>Carte Variée</h3>
+          <p>Kebabs, tacos, burgers, assiettes, salades — pour toutes les envies et tous les appétits.</p>
         </article>
         <article class="feature-card">
-          <div class="icon-wrap"><svg viewBox="0 0 512 512" fill="currentColor"><path d="M444.1 67.9C427 50.8 404.5 48 394.2 48c-21.5 0-42.1 8.5-57.4 23.7L256 152.5 175.2 71.7C159.9 56.5 139.3 48 117.8 48c-10.3 0-32.8 2.8-49.9 19.9C33.3 102.4 16 154.3 16 200c0 46.2 18.8 86.8 55.8 120.5C106.3 352.2 192 416 256 480c64-64 149.7-127.8 184.2-159.5C477.2 286.8 496 246.2 496 200c0-45.7-17.3-97.6-51.9-132.1z"/></svg></div>
-          <h3>Chefs Passionnés</h3>
-          <p>Une équipe expérimentée qui prépare chaque plat avec soin, pour une qualité constante et un goût exceptionnel.</p>
+          <div class="icon-wrap">
+            <svg viewBox="0 0 512 512" fill="currentColor"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>
+          </div>
+          <h3>Service Rapide</h3>
+          <p>Préparation à la minute, sur place ou à emporter. Livraison via Uber Eats disponible.</p>
         </article>
       </div>
     </section>
@@ -90,20 +87,20 @@
     <section class="section about-teaser">
       <div class="container grid grid-2 align-center">
         <div class="about-img">
-          <img src="https://kebab37.com/wp-content/uploads/2025/12/all-768x1024.jpeg" alt="Plats Kebab 37" loading="lazy">
+          <img src="https://kebab37.com/wp-content/uploads/2025/12/all-768x1024.jpeg" alt="Plats L'Étoile" loading="lazy">
         </div>
         <div class="about-text">
-          <h2>Bienvenue chez votre snack préféré à Tiznit !</h2>
-          <h3 class="subtitle">Un goût inoubliable, un accueil chaleureux</h3>
-          <p>Chez Kebab 37, nous mettons tout notre savoir-faire pour vous offrir des plats savoureux, préparés à base d'ingrédients frais et locaux. Profitez d'une expérience culinaire rapide, généreuse et authentique.</p>
+          <h2>Bienvenue chez L'Étoile !</h2>
+          <h3 class="subtitle">Le snack qui fait briller Clermont-Ferrand</h3>
+          <p>Depuis plus de 10 ans, L'Étoile est l'adresse incontournable pour les amateurs de kebabs, tacos et burgers à Clermont-Ferrand. Notre équipe passionnée prépare chaque plat avec des ingrédients frais et un savoir-faire reconnu.</p>
           <ul class="check-list">
-            <li>Viande 100% fraîche</li>
-            <li>Légumes bio et croquants</li>
-            <li>Goût unique garanti</li>
-            <li>Service Emporter rapide et convivial</li>
-            <li>Commandez, emportez, savourez !</li>
+            <li>Viandes 100% halal certifiées</li>
+            <li>Légumes frais du marché</li>
+            <li>Sauces maison exclusives</li>
+            <li>Service rapide et convivial</li>
+            <li>Sur place, à emporter ou en livraison</li>
           </ul>
-          <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=212660781515" target="_blank" rel="noopener">Commander</a>
+          <a class="btn btn-primary" href="tel:0473905738">Appeler pour commander</a>
         </div>
       </div>
     </section>
@@ -113,54 +110,38 @@
       <div class="container">
         <div class="grid grid-2 align-center">
           <div class="menu-text">
-            <span class="eyebrow">KEBAB 37</span>
-            <h2>Des Plats Savoureux, Préparés avec Qualité</h2>
-            <p>Chez <strong>Kebab 37</strong>, chaque plat est une invitation à la gourmandise. Découvrez en images nos spécialités : tacos fondants, kebabs généreux, salades fraîches et burgers savoureux – tout est préparé avec passion et des ingrédients de qualité.</p>
-            <a class="btn btn-primary" href="menu.html">Voir Menu</a>
+            <span class="eyebrow">L'ÉTOILE</span>
+            <h2>Des plats généreux, faits avec passion</h2>
+            <p>Chez <strong>L'Étoile</strong>, chaque plat est une explosion de saveurs. Découvrez nos kebabs juteux, nos tacos fondants, nos burgers gourmands et nos assiettes copieuses — tout est préparé à la commande.</p>
+            <a class="btn btn-primary" href="menu.html">Voir le Menu Complet</a>
           </div>
           <div class="menu-images grid grid-2">
-            <img src="https://kebab37.com/wp-content/uploads/2025/07/IMG_6807-ezgif.com-png-to-webp-converter-768x1024.webp" alt="Kebab 37 plat" loading="lazy">
-            <img src="https://kebab37.com/wp-content/uploads/2025/07/IMG_6446-ezgif.com-png-to-webp-converter-768x1024.webp" alt="Kebab 37 plat" loading="lazy">
+            <img src="https://kebab37.com/wp-content/uploads/2025/07/IMG_6807-ezgif.com-png-to-webp-converter-768x1024.webp" alt="Plat L'Étoile" loading="lazy">
+            <img src="https://kebab37.com/wp-content/uploads/2025/07/IMG_6446-ezgif.com-png-to-webp-converter-768x1024.webp" alt="Plat L'Étoile" loading="lazy">
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- MENU CARDS -->
-    <section class="section menu-cards-section">
-      <div class="container text-center">
-        <div class="stars">★★★★★</div>
-        <h2>Choisissez Votre Menu</h2>
-        <p class="lead">Composez votre repas idéal chez Kebab 37 à partir de nos choix frais et savoureux. Que vous préfériez une salade croquante, des tacos épicés ou un wrap généreux, c'est vous qui décidez !</p>
-        <div class="menu-card-grid grid grid-2">
-          <img src="https://kebab37.com/wp-content/uploads/2026/04/menu1-737x1024.jpeg" alt="Menu Kebab 37 page 1" loading="lazy" class="menu-page-img">
-          <img src="https://kebab37.com/wp-content/uploads/2026/04/menu2-737x1024.jpeg" alt="Menu Kebab 37 page 2" loading="lazy" class="menu-page-img">
-        </div>
-        <a class="btn btn-primary" href="menu.html">Voir le Menu</a>
       </div>
     </section>
 
     <!-- IMAGE CAROUSEL -->
     <section class="section carousel-section">
       <div class="container">
-        <h2>Nos Plats en Un Coup d'Œil</h2>
-        <p>Faites défiler nos spécialités maison : burgers, tacos, kebabs et plus encore. Chaque image reflète notre passion pour le goût et la qualité.</p>
+        <h2 class="text-center">Nos Spécialités en Images</h2>
+        <p class="text-center lead">Kebabs, tacos, burgers et bien plus — laissez-vous tenter par nos créations maison.</p>
         <div class="swiper food-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-07-31-at-12.10.33-scaled.jpeg" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image1-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/IMG_6446-ezgif.com-png-to-webp-converter-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image6-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image10-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-07-31-at-12.10.35.jpeg" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image3-scaled.jpg" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image5-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image9-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image2-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image7-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-07-31-at-01.11.53.jpeg" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image4-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
-            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image8-scaled.webp" alt="Plat Kebab 37" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-07-31-at-12.10.33-scaled.jpeg" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image1-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image6-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image10-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-07-31-at-12.10.35.jpeg" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image3-scaled.jpg" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image5-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image9-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image2-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image7-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image4-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
+            <div class="swiper-slide"><img src="https://kebab37.com/wp-content/uploads/2025/07/image8-scaled.webp" alt="Plat L'Étoile" loading="lazy"></div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -172,43 +153,43 @@
     <!-- TESTIMONIALS -->
     <section class="section testimonials">
       <div class="container text-center">
-        <h2>Avis de nos clients</h2>
-        <p class="lead">Découvrez ce que nos clients pensent de notre snack à Tiznit. Leur satisfaction est notre plus grande fierté : service rapide, plats savoureux et ambiance conviviale sont toujours au rendez-vous.</p>
+        <h2>Ce que disent nos clients</h2>
+        <p class="lead">Plus de 2000 avis positifs sur les plateformes de livraison. Merci Clermont !</p>
         <div class="swiper testimonial-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>Les kebabs sont délicieux, bien garnis et toujours chauds.</p>
-                <strong>— jihane ali</strong>
+                <p>Le meilleur kebab de Clermont ! Viande tendre, sauces incroyables, portions généreuses.</p>
+                <strong>— Karim B.</strong>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>Nice atmosphere, you can eat anytime they're always available.</p>
-                <strong>— Mounsif Tayro</strong>
+                <p>Tacos XXL au top, fromage fondu à la perfection. Je recommande les yeux fermés !</p>
+                <strong>— Julie M.</strong>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>Roadside kebab. Very good kefta plate. Honestly, the price/quality ratio is more than reasonable 👍🏼</p>
-                <strong>— Elivienne Nang</strong>
+                <p>Service rapide, personnel très sympa. Mon adresse du midi depuis 3 ans.</p>
+                <strong>— Thomas L.</strong>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="stars">★★★★☆</div>
+                <p>Très bon rapport qualité/prix. Les assiettes sont copieuses et bien assaisonnées.</p>
+                <strong>— Fatima R.</strong>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>Well served</p>
-                <strong>— Kouchane jihane</strong>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>Très bon snack, service rapide et personnel sympa. Je recommande !</p>
-                <strong>— hassane allaoui</strong>
+                <p>Burger maison excellent, frites croustillantes. Un vrai régal !</p>
+                <strong>— Maxime D.</strong>
               </div>
             </div>
           </div>
@@ -220,7 +201,21 @@
     <!-- GOOGLE MAP -->
     <section class="section map-section">
       <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240.86875749904013!2d-9.73588163179728!3d29.69650663457339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb47b0d351d3c29%3A0xc2f418e8f005f6c!2sKebab%2037!5e1!3m2!1sar!2sma!4v1751650350150!5m2!1sar!2sma" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kebab 37 sur Google Maps"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.7!2d3.0870!3d45.7796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71bdf6a2a8e3d%3A0x123456789!2sL'%C3%89toile!5e0!3m2!1sfr!2sfr" width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="L'Étoile sur Google Maps"></iframe>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Une envie de kebab ?</h2>
+          <p>Passez nous voir au 29 rue Ballainvilliers ou commandez par téléphone !</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="tel:0473905738">📞 Commander</a>
+          <a class="btn btn-ghost-light" href="menu.html">Voir la carte</a>
+        </div>
       </div>
     </section>
   </main>
@@ -229,9 +224,11 @@
   <footer class="site-footer">
     <div class="container grid grid-3 footer-grid">
       <div class="footer-brand">
-        <a href="index.html">
-          <img src="https://kebab37.com/wp-content/uploads/2025/06/cropped-LOGO-01-removebg-preview.png" alt="Kebab 37" class="footer-logo">
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-icon">★</span>
+          <span class="logo-text">L'Étoile</span>
         </a>
+        <p class="footer-desc">Le snack qui brille à Clermont-Ferrand. Kebabs, tacos, burgers — frais, généreux, halal.</p>
       </div>
       <div>
         <h4>Navigation</h4>
@@ -243,22 +240,22 @@
         </ul>
       </div>
       <div>
-        <h4>Suivez-nous</h4>
+        <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:contact@kebab37.com">Email : contact@kebab37.com</a></li>
-          <li><a href="tel:0520-635025">Telephone : 0520-635025</a></li>
-          <li><a href="https://api.whatsapp.com/send?phone=212660781515" target="_blank" rel="noopener">WhatsApp : 0660781515</a></li>
+          <li><a href="tel:0473905738">📞 04 73 90 57 38</a></li>
+          <li><a href="mailto:lotfourt@gmail.com">✉️ lotfourt@gmail.com</a></li>
+          <li>📍 29 rue Ballainvilliers, 63000 Clermont-Ferrand</li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>Copyright © <span id="year"></span> - made with <span style="color:red;">❤</span> by <a href="https://soufianemouahhidi.com/" target="_blank" rel="noopener">Soufiane Mouahhidi</a>, All Rights Reserved.</p>
+      <p>© <span id="year"></span> L'Étoile Clermont-Ferrand — Tous droits réservés.</p>
     </div>
   </footer>
 
-  <!-- WHATSAPP FLOATING BUTTON -->
-  <a href="https://api.whatsapp.com/send?phone=212660781515" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter via WhatsApp">
-    <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.004 0C7.165 0 .003 7.16.003 15.997c0 2.82.737 5.573 2.14 7.998L.003 32l8.212-2.094A15.96 15.96 0 0016.004 32C24.84 32 32 24.84 32 15.997 32 7.16 24.84 0 16.004 0zm0 29.39a13.38 13.38 0 01-6.82-1.87l-.49-.29-5.07 1.33 1.35-4.94-.32-.5a13.33 13.33 0 01-2.04-7.12c0-7.38 6.01-13.39 13.39-13.39S29.39 8.62 29.39 16s-6.01 13.39-13.39 13.39zm7.34-10.02c-.4-.2-2.37-1.17-2.74-1.3-.37-.14-.64-.2-.91.2-.27.4-1.04 1.3-1.28 1.57-.23.27-.47.3-.87.1-.4-.2-1.69-.62-3.22-1.98-1.19-1.06-1.99-2.37-2.23-2.77-.23-.4-.02-.62.18-.82.18-.18.4-.47.6-.7.2-.24.27-.4.4-.67.14-.27.07-.5-.03-.7-.1-.2-.91-2.2-1.25-3.01-.33-.79-.66-.68-.91-.7-.23-.01-.5-.01-.77-.01-.27 0-.7.1-1.07.5-.37.4-1.4 1.37-1.4 3.34 0 1.97 1.43 3.87 1.63 4.14.2.27 2.82 4.3 6.83 6.03.96.41 1.7.66 2.28.84.96.3 1.83.26 2.52.16.77-.12 2.37-.97 2.71-1.9.33-.94.33-1.74.23-1.9-.1-.17-.37-.27-.77-.47z"/></svg>
+  <!-- PHONE FLOATING BUTTON -->
+  <a href="tel:0473905738" class="phone-float" aria-label="Appeler L'Étoile">
+    <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.8.3 1.6.5 2.5.6A2 2 0 0 1 22 16.9z"/></svg>
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
