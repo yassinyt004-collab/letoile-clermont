@@ -103,23 +103,32 @@
         if (entry.isIntersecting) {
           var cards = entry.target.querySelectorAll('.item-card');
           cards.forEach(function (card, i) {
-            card.style.transitionDelay = (i * 80) + 'ms';
-            card.classList.add('visible');
+            card.style.transitionDelay = (i * 60) + 'ms';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
           });
           menuObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.02, rootMargin: '0px 0px 100px 0px' });
 
     menuCats.forEach(function (cat) {
       var cards = cat.querySelectorAll('.item-card');
       cards.forEach(function (card) {
         card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity .5s ease, transform .5s ease';
+        card.style.transform = 'translateY(16px)';
+        card.style.transition = 'opacity .4s ease, transform .4s ease';
       });
       menuObserver.observe(cat);
     });
+
+    // Fallback: show all after 2s in case observer doesn't fire
+    setTimeout(function () {
+      document.querySelectorAll('.item-card').forEach(function (card) {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      });
+    }, 2000);
   }
 
   // --- Smooth anchor scroll for menu page ---
