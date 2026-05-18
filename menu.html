@@ -4,137 +4,262 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notre Carte – L'Etoile Clermont</title>
-  <meta name="description" content="Découvrez la carte complète de L'Etoile Clermont : tacos, burgers, sandwichs, bowls, assiettes, paninis et plus.">
+  <meta name="description" content="Découvrez la carte complète de L'Etoile Clermont : croustiz, tacos, burgers, sandwichs, bowls, assiettes, paninis et plus.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@400;500;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="https://www.letoile-clermont.com/wp-content/uploads/2024/07/cropped-logo-32x32.png" sizes="32x32">
 </head>
 <body>
-  <header class="site-header" id="siteHeader">
-    <div class="header-inner">
-      <nav class="nav-left"><ul class="main-menu"><li><a href="index.html">Accueil</a></li><li><a href="menu.html" style="color:var(--gold)">Notre Carte</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
-      <a href="index.html" class="logo-center"><img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos-scaled.png" alt="L'Etoile" class="logo-img"></a>
-      <div class="nav-right"><div class="order-online"><span class="order-label">Commander</span><a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="36" height="36"></a><a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="36" height="36"></a></div></div>
-      <button class="mobile-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <nav class="header__nav-left">
+        <ul>
+          <li class="has-dropdown">
+            <a href="menu.html" class="active">Notre Carte <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor"><path d="M1 1l4 4 4-4"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#croustiz">Nos Croustiz</a></li>
+              <li><a href="#tacos">Tacos à composer</a></li>
+              <li><a href="#tacos-signatures">Tacos Signatures</a></li>
+              <li><a href="#tacos-sucres">Tacos Sucrés</a></li>
+              <li><a href="#burgers">Nos Burgers</a></li>
+              <li><a href="#sandwichs">Nos Sandwichs</a></li>
+              <li><a href="#bowls">Nos Bowls</a></li>
+              <li><a href="#menus">Menus & Box</a></li>
+              <li><a href="#assiettes">Assiettes & Texmex</a></li>
+              <li><a href="#paninis">Nos Paninis</a></li>
+              <li><a href="#salades">Nos Salades</a></li>
+              <li><a href="#frites">Frites & Barquettes</a></li>
+              <li><a href="#desserts">Desserts & Boissons</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="header__logo"><img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos-scaled.png" alt="L'Etoile"></a>
+      <div class="header__right">
+        <div class="header__socials">
+          <a href="https://www.facebook.com/Letoileclf" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/1-2.png" alt="" width="32" height="32"></a>
+          <a href="https://www.instagram.com/letoile.tacos/" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/2-2.png" alt="" width="32" height="32"></a>
+          <a href="https://www.tiktok.com/@letoile.tacos?lang=fr" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/3-1.png" alt="" width="32" height="32"></a>
+          <a href="https://www.snapchat.com/add/letoiletacos" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/4-2.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="header__delivery">
+          <span>Commandez</span>
+          <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="34" height="34"></a>
+          <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="34" height="34"></a>
+        </div>
+      </div>
+      <button class="header__burger" id="menuToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
-  <nav class="mobile-nav" id="mobileNav"><ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Notre Carte</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Notre Carte</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="mobile-menu__delivery"><span>Commander</span><div><a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="44"></a><a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="44"></a></div></div>
+  </div>
 
   <main>
-    <div class="page-header"><h1>Notre Carte</h1><p>Tacos, Burgers, Sandwichs, Bowls & plus encore</p></div>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero__content">
+        <h1>Notre Carte</h1>
+        <p>Tacos · Croustiz · Burgers · Sandwichs · Bowls · Assiettes & plus</p>
+      </div>
+    </section>
 
-    <div class="menu-categories">
-      <div class="menu-cat" id="croustiz"><h2>Nos Croustiz</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Croustiz Classique</span><span class="price">6,90€</span></h3><p>Tortilla croustillante, viande au choix, fromage fondu, sauce signature</p></div>
-        <div class="menu-item-card"><h3><span>Croustiz Double</span><span class="price">8,90€</span></h3><p>Double garniture, fromage fondu, frites, sauce au choix</p></div>
-      </div></div>
+    <!-- MENU -->
+    <div class="menu-page">
 
-      <div class="menu-cat" id="tacos"><h2>Tacos à Composer</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Tacos M (1 viande)</span><span class="price">7,50€</span></h3><p>Sauce gruyère maison, 1 viande, 1 garniture et 1 sauce au choix</p></div>
-        <div class="menu-item-card"><h3><span>Tacos L (2 viandes)</span><span class="price">9,50€</span></h3><p>Sauce gruyère, 2 viandes, frites, 2 sauces au choix</p></div>
-        <div class="menu-item-card"><h3><span>Tacos XL (3 viandes)</span><span class="price">11,50€</span></h3><p>Sauce gruyère, 3 viandes, frites, toutes les sauces</p></div>
-        <div class="menu-item-card"><h3><span>Tacos XXL (4 viandes)</span><span class="price">13,50€</span></h3><p>Le géant ! 4 viandes, frites, fromage fondu, sauces illimitées</p></div>
-      </div></div>
+      <!-- CROUSTIZ -->
+      <section class="menu-cat" id="croustiz" data-animate>
+        <div class="menu-cat__header">
+          <h2>Nos Croustiz</h2>
+          <span class="menu-cat__badge">Nouveau</span>
+        </div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Croustiz Classique</span><strong>6,90€</strong></h3><p>Tortilla croustillante, viande au choix, fromage fondu, sauce signature</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Croustiz Double</span><strong>8,90€</strong></h3><p>Double garniture, fromage fondu, frites, sauce au choix</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Croustiz Chicken</span><strong>7,90€</strong></h3><p>Poulet pané croustillant, cheddar, salade, sauce BBQ</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="tacos-signatures"><h2>Nos Tacos Signatures</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Le Montagnard</span><span class="price">10,90€</span></h3><p>Poulet pané, raclette, oignons frits, sauce fromagère</p></div>
-        <div class="menu-item-card"><h3><span>Le Texan</span><span class="price">10,90€</span></h3><p>Steak haché, cheddar, bacon, sauce BBQ</p></div>
-        <div class="menu-item-card"><h3><span>Le Méditerranéen</span><span class="price">10,90€</span></h3><p>Poulet grillé, mozzarella, tomates séchées, pesto</p></div>
-      </div></div>
+      <!-- TACOS -->
+      <section class="menu-cat" id="tacos" data-animate>
+        <div class="menu-cat__header"><h2>Tacos à Composer</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Tacos M – 1 viande</span><strong>7,50€</strong></h3><p>Sauce gruyère maison, 1 viande, 1 garniture, 1 sauce</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Tacos L – 2 viandes</span><strong>9,50€</strong></h3><p>Sauce gruyère, 2 viandes, frites, 2 sauces</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Tacos XL – 3 viandes</span><strong>11,50€</strong></h3><p>Sauce gruyère, 3 viandes, frites, toutes les sauces</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Tacos XXL – 4 viandes</span><strong>13,50€</strong></h3><p>Le géant ! 4 viandes, frites, fromage fondu, sauces illimitées</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="tacos-sucres"><h2>Nos Tacos Sucrés</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Tacos Nutella-Banane</span><span class="price">6,50€</span></h3><p>Tortilla grillée, Nutella, banane fraîche</p></div>
-        <div class="menu-item-card"><h3><span>Tacos Spéculoos</span><span class="price">6,50€</span></h3><p>Crème spéculoos, chocolat blanc, fruits rouges</p></div>
-      </div></div>
+      <!-- TACOS SIGNATURES -->
+      <section class="menu-cat" id="tacos-signatures" data-animate>
+        <div class="menu-cat__header"><h2>Nos Tacos Signatures</h2><span class="menu-cat__badge">Best-seller</span></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Le Montagnard</span><strong>10,90€</strong></h3><p>Poulet pané, raclette, oignons frits, sauce fromagère</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Le Texan</span><strong>10,90€</strong></h3><p>Steak haché, cheddar, bacon, sauce BBQ</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Le Méditerranéen</span><strong>10,90€</strong></h3><p>Poulet grillé, mozzarella, tomates séchées, pesto</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>L'Oriental</span><strong>10,90€</strong></h3><p>Kebab, feta, olives, poivrons grillés, sauce harissa-miel</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="burgers"><h2>Nos Burgers</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Burger Classique</span><span class="price">8,90€</span></h3><p>Steak haché, salade, tomate, oignon, cheddar, sauce burger</p></div>
-        <div class="menu-item-card"><h3><span>Burger Raclette</span><span class="price">10,50€</span></h3><p>Steak haché, raclette fondue, oignons caramélisés, bacon</p></div>
-        <div class="menu-item-card"><h3><span>Chicken Burger</span><span class="price">9,50€</span></h3><p>Poulet pané croustillant, salade, sauce miel-moutarde</p></div>
-      </div></div>
+      <!-- TACOS SUCRÉS -->
+      <section class="menu-cat" id="tacos-sucres" data-animate>
+        <div class="menu-cat__header"><h2>Nos Tacos Sucrés</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Nutella-Banane</span><strong>6,50€</strong></h3><p>Tortilla grillée, Nutella fondant, banane fraîche</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Spéculoos Choco</span><strong>6,50€</strong></h3><p>Crème spéculoos, chocolat blanc, fruits rouges</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Caramel Beurre Salé</span><strong>6,90€</strong></h3><p>Caramel maison, pomme, chantilly, noisettes</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="sandwichs"><h2>Nos Sandwichs</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Kebab Pain</span><span class="price">7,50€</span></h3><p>Pain, viande kebab, crudités, sauce au choix</p></div>
-        <div class="menu-item-card"><h3><span>Kebab Galette</span><span class="price">7,80€</span></h3><p>Galette roulée, viande kebab, crudités, sauce</p></div>
-        <div class="menu-item-card"><h3><span>Sandwich Poulet</span><span class="price">7,80€</span></h3><p>Pain, poulet grillé, crudités, sauce au choix</p></div>
-        <div class="menu-item-card"><h3><span>Sandwich Cordon Bleu</span><span class="price">8,50€</span></h3><p>Cordon bleu pané, salade, fromage, sauce</p></div>
-      </div></div>
+      <!-- BURGERS -->
+      <section class="menu-cat" id="burgers" data-animate>
+        <div class="menu-cat__header"><h2>Nos Burgers</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Burger Classique</span><strong>8,90€</strong></h3><p>Steak haché, salade, tomate, oignon, cheddar, sauce burger</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Burger Raclette</span><strong>10,50€</strong></h3><p>Steak, raclette fondue, oignons caramélisés, bacon</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Chicken Burger</span><strong>9,50€</strong></h3><p>Poulet pané croustillant, salade, sauce miel-moutarde</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Double Smash</span><strong>11,90€</strong></h3><p>Double steak smashé, double cheddar, pickles, sauce secrète</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="bowls"><h2>Nos Bowls</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Bowl à Composer</span><span class="price">10,50€</span></h3><p>Base au choix, viande, légumes frais, toppings, sauce</p></div>
-        <div class="menu-item-card"><h3><span>Bowl Signature Poulet</span><span class="price">11,90€</span></h3><p>Riz, poulet mariné, avocat, edamame, sauce soja-sésame</p></div>
-        <div class="menu-item-card"><h3><span>Bowl Signature Bœuf</span><span class="price">12,50€</span></h3><p>Riz, bœuf émincé, légumes grillés, sauce teriyaki</p></div>
-      </div></div>
+      <!-- SANDWICHS -->
+      <section class="menu-cat" id="sandwichs" data-animate>
+        <div class="menu-cat__header"><h2>Nos Sandwichs</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Kebab Pain</span><strong>7,50€</strong></h3><p>Pain, viande kebab, crudités, sauce au choix</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Kebab Galette</span><strong>7,80€</strong></h3><p>Galette roulée, viande kebab, crudités, sauce</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Sandwich Poulet</span><strong>7,80€</strong></h3><p>Pain, poulet grillé, crudités, sauce au choix</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Cordon Bleu</span><strong>8,50€</strong></h3><p>Cordon bleu pané, salade, fromage fondu, sauce</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Sandwich Escalope</span><strong>8,50€</strong></h3><p>Escalope panée, salade, tomate, sauce au choix</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="menus"><h2>Nos Menus & Box</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Menu Tacos</span><span class="price">11,90€</span></h3><p>Tacos M + frites + boisson 33cl</p></div>
-        <div class="menu-item-card"><h3><span>Menu Burger</span><span class="price">12,50€</span></h3><p>Burger au choix + frites + boisson 33cl</p></div>
-        <div class="menu-item-card"><h3><span>Box Découverte</span><span class="price">15,90€</span></h3><p>Tacos S + 3 nuggets + frites + boisson + dessert</p></div>
-      </div></div>
+      <!-- BOWLS -->
+      <section class="menu-cat" id="bowls" data-animate>
+        <div class="menu-cat__header"><h2>Nos Bowls</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Bowl à Composer</span><strong>10,50€</strong></h3><p>Base au choix, viande, légumes frais, toppings, sauce</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Bowl Poulet Thaï</span><strong>11,90€</strong></h3><p>Riz, poulet mariné, avocat, edamame, sauce soja-sésame</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Bowl Bœuf Teriyaki</span><strong>12,50€</strong></h3><p>Riz, bœuf émincé, légumes grillés, sauce teriyaki</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="assiettes"><h2>Assiettes & Texmex</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Assiette Kebab</span><span class="price">12,00€</span></h3><p>Viande kebab, frites, salade composée, sauce</p></div>
-        <div class="menu-item-card"><h3><span>Assiette Mixte</span><span class="price">14,00€</span></h3><p>Kebab + poulet, frites, riz, salade</p></div>
-        <div class="menu-item-card"><h3><span>Texmex Nachos</span><span class="price">9,90€</span></h3><p>Chips tortilla, viande hachée, cheddar fondu, guacamole, salsa</p></div>
-      </div></div>
+      <!-- MENUS -->
+      <section class="menu-cat" id="menus" data-animate>
+        <div class="menu-cat__header"><h2>Nos Menus & Box</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Menu Tacos</span><strong>11,90€</strong></h3><p>Tacos M + frites + boisson 33cl</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Menu Burger</span><strong>12,50€</strong></h3><p>Burger au choix + frites + boisson 33cl</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Box Découverte</span><strong>15,90€</strong></h3><p>Tacos S + 3 nuggets + frites + boisson + dessert</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Menu Enfant</span><strong>7,90€</strong></h3><p>Nuggets ou mini burger + frites + boisson + surprise</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="paninis"><h2>Nos Paninis</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Panini Kebab</span><span class="price">6,90€</span></h3><p>Pain panini grillé, viande kebab, fromage, sauce</p></div>
-        <div class="menu-item-card"><h3><span>Panini Poulet</span><span class="price">6,90€</span></h3><p>Poulet, mozzarella, tomate, basilic</p></div>
-      </div></div>
+      <!-- ASSIETTES -->
+      <section class="menu-cat" id="assiettes" data-animate>
+        <div class="menu-cat__header"><h2>Assiettes & Texmex</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Assiette Kebab</span><strong>12,00€</strong></h3><p>Viande kebab, frites, salade composée, sauce</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Assiette Mixte</span><strong>14,00€</strong></h3><p>Kebab + poulet, frites, riz, salade</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Nachos Loaded</span><strong>9,90€</strong></h3><p>Chips tortilla, viande, cheddar fondu, guacamole, salsa</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Quesadillas</span><strong>8,90€</strong></h3><p>Tortilla grillée, viande, fromage fondu, poivrons</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="salades"><h2>Nos Salades</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Salade Poulet</span><span class="price">9,50€</span></h3><p>Salade, poulet grillé, tomates, maïs, olives, sauce vinaigrette</p></div>
-        <div class="menu-item-card"><h3><span>Salade Kebab</span><span class="price">9,50€</span></h3><p>Salade, viande kebab, crudités variées, sauce au choix</p></div>
-      </div></div>
+      <!-- PANINIS -->
+      <section class="menu-cat" id="paninis" data-animate>
+        <div class="menu-cat__header"><h2>Nos Paninis</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Panini Kebab</span><strong>6,90€</strong></h3><p>Pain grillé, viande kebab, fromage fondu, sauce</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Panini Poulet</span><strong>6,90€</strong></h3><p>Poulet, mozzarella, tomate, basilic</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Panini Thon</span><strong>6,90€</strong></h3><p>Thon, fromage, tomate, maïs, sauce cocktail</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="frites"><h2>Frites & Barquettes</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Frites classiques</span><span class="price">3,50€</span></h3><p>Portion généreuse de frites dorées</p></div>
-        <div class="menu-item-card"><h3><span>Barquette Frites-Fromage</span><span class="price">5,90€</span></h3><p>Frites, fromage fondu, sauce au choix</p></div>
-        <div class="menu-item-card"><h3><span>Barquette Loaded</span><span class="price">7,90€</span></h3><p>Frites, viande, fromage, jalapenos, sauces</p></div>
-      </div></div>
+      <!-- SALADES -->
+      <section class="menu-cat" id="salades" data-animate>
+        <div class="menu-cat__header"><h2>Nos Salades</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Salade Poulet</span><strong>9,50€</strong></h3><p>Salade, poulet grillé, tomates, maïs, olives, vinaigrette</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Salade Kebab</span><strong>9,50€</strong></h3><p>Salade, viande kebab, crudités variées, sauce</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Salade Chèvre Chaud</span><strong>10,50€</strong></h3><p>Mesclun, chèvre chaud, noix, miel, vinaigrette balsamique</p></div></article>
+        </div>
+      </section>
 
-      <div class="menu-cat" id="desserts"><h2>Desserts & Boissons</h2><div class="menu-items">
-        <div class="menu-item-card"><h3><span>Tiramisu</span><span class="price">4,50€</span></h3><p>Fait maison</p></div>
-        <div class="menu-item-card"><h3><span>Cookie géant</span><span class="price">3,00€</span></h3><p>Chocolat noir ou chocolat blanc</p></div>
-        <div class="menu-item-card"><h3><span>Soda 33cl</span><span class="price">2,50€</span></h3><p>Coca, Fanta, Sprite, Oasis</p></div>
-        <div class="menu-item-card"><h3><span>Eau 50cl</span><span class="price">1,50€</span></h3><p>Plate ou gazeuse</p></div>
-      </div></div>
+      <!-- FRITES -->
+      <section class="menu-cat" id="frites" data-animate>
+        <div class="menu-cat__header"><h2>Frites & Barquettes</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Frites Classiques</span><strong>3,50€</strong></h3><p>Portion généreuse, dorées et croustillantes</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Barquette Frites-Fromage</span><strong>5,90€</strong></h3><p>Frites, fromage fondu, sauce au choix</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Barquette Loaded</span><strong>7,90€</strong></h3><p>Frites, viande au choix, fromage, jalapenos, sauces</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Potatoes</span><strong>4,50€</strong></h3><p>Pommes de terre épicées croustillantes</p></div></article>
+        </div>
+      </section>
+
+      <!-- DESSERTS & BOISSONS -->
+      <section class="menu-cat" id="desserts" data-animate>
+        <div class="menu-cat__header"><h2>Desserts & Boissons</h2></div>
+        <div class="menu-items">
+          <article class="item-card"><div class="item-card__body"><h3><span>Tiramisu maison</span><strong>4,50€</strong></h3><p>Recette traditionnelle, mascarpone & café</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Cookie géant</span><strong>3,00€</strong></h3><p>Chocolat noir ou chocolat blanc-macadamia</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Brownie</span><strong>3,50€</strong></h3><p>Intense chocolat, cœur fondant</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Soda 33cl</span><strong>2,50€</strong></h3><p>Coca-Cola, Fanta, Sprite, Oasis, Ice Tea</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Eau 50cl</span><strong>1,50€</strong></h3><p>Plate ou gazeuse</p></div></article>
+          <article class="item-card"><div class="item-card__body"><h3><span>Jus de fruits</span><strong>3,00€</strong></h3><p>Orange, pomme, multifruits</p></div></article>
+        </div>
+      </section>
+
     </div>
 
     <!-- CTA -->
-    <section class="info-band" style="margin-top:40px;">
-      <div class="info-col">
-        <h3>Commander par téléphone</h3>
-        <p><a href="tel:+33473905738" class="gold"><strong>04.73.90.57.38</strong></a></p>
+    <section class="info-band" style="margin-top:0;">
+      <div class="info-band__col">
+        <h3 class="gold">Commander par téléphone</h3>
+        <p class="info-band__phone"><a href="tel:+33473905738">04.73.90.57.38</a></p>
       </div>
-      <div class="info-col info-logo">
-        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos.png" alt="Logo" class="info-logo-img">
+      <div class="info-band__col info-band__center">
+        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos-scaled.png" alt="Logo" class="info-band__logo">
       </div>
-      <div class="info-col">
-        <h3>Ou en ligne</h3>
-        <div style="display:flex;gap:12px;justify-content:center;align-items:center;margin-top:8px;">
-          <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="50"></a>
+      <div class="info-band__col">
+        <h3 class="gold">Ou en ligne</h3>
+        <div style="display:flex;gap:16px;justify-content:center;align-items:center;margin-top:10px;">
+          <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="55"></a>
           <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="50"></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-bottom">
-      <div class="footer-copy"><p>© <span id="year"></span> L'Etoile Clermont</p></div>
-      <div class="footer-socials">
-        <a href="https://www.facebook.com/Letoileclf" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/1-2.png" alt="Facebook" width="36"></a>
-        <a href="https://www.instagram.com/letoile.tacos/" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/2-2.png" alt="Instagram" width="36"></a>
-        <a href="https://www.tiktok.com/@letoile.tacos?lang=fr" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/3-1.png" alt="TikTok" width="36"></a>
-        <a href="https://www.snapchat.com/add/letoiletacos" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/4-2.png" alt="Snapchat" width="36"></a>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__primary">
+      <p class="footer__order-text">Commandez en ligne sur</p>
+      <div class="footer__logos">
+        <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="70"></a>
+        <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="60"></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> L'Etoile Clermont</p>
+      <img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/services-1.png" alt="Services" class="footer__services">
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/Letoileclf" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/1-2.png" alt="" width="32"></a>
+        <a href="https://www.instagram.com/letoile.tacos/" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/2-2.png" alt="" width="32"></a>
+        <a href="https://www.tiktok.com/@letoile.tacos?lang=fr" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/3-1.png" alt="" width="32"></a>
+        <a href="https://www.snapchat.com/add/letoiletacos" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/4-2.png" alt="" width="32"></a>
       </div>
     </div>
   </footer>
-  <button id="scrollTop" class="scroll-top" aria-label="Retour en haut">▲</button>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Haut de page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

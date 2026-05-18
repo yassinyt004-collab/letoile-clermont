@@ -7,28 +7,29 @@
   <meta name="description" content="L'Etoile Clermont vous propose une sélection de succulents tacos, sandwichs, burgers & bowls. 29 Rue Ballainvilliers, Clermont-Ferrand.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@400;500;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="https://www.letoile-clermont.com/wp-content/uploads/2024/07/cropped-logo-32x32.png" sizes="32x32">
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="site-header" id="siteHeader">
-    <div class="header-inner">
-      <nav class="nav-left">
-        <ul class="main-menu">
-          <li class="has-submenu">
-            <a href="menu.html">Notre Carte <span class="arrow">▾</span></a>
-            <ul class="submenu">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <nav class="header__nav-left">
+        <ul>
+          <li class="has-dropdown">
+            <a href="menu.html">Notre Carte <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor"><path d="M1 1l4 4 4-4"/></svg></a>
+            <ul class="dropdown">
               <li><a href="menu.html#croustiz">Nos Croustiz</a></li>
               <li><a href="menu.html#tacos">Tacos à composer</a></li>
-              <li><a href="menu.html#tacos-signatures">Nos Tacos Signatures</a></li>
-              <li><a href="menu.html#tacos-sucres">Nos Tacos Sucrés</a></li>
+              <li><a href="menu.html#tacos-signatures">Tacos Signatures</a></li>
+              <li><a href="menu.html#tacos-sucres">Tacos Sucrés</a></li>
               <li><a href="menu.html#burgers">Nos Burgers</a></li>
               <li><a href="menu.html#sandwichs">Nos Sandwichs</a></li>
               <li><a href="menu.html#bowls">Nos Bowls</a></li>
-              <li><a href="menu.html#menus">Nos Menus & Box</a></li>
+              <li><a href="menu.html#menus">Menus & Box</a></li>
               <li><a href="menu.html#assiettes">Assiettes & Texmex</a></li>
               <li><a href="menu.html#paninis">Nos Paninis</a></li>
               <li><a href="menu.html#salades">Nos Salades</a></li>
@@ -40,147 +41,147 @@
         </ul>
       </nav>
 
-      <a href="index.html" class="logo-center">
-        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos-scaled.png" alt="L'Etoile Clermont" class="logo-img">
+      <a href="index.html" class="header__logo">
+        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos-scaled.png" alt="L'Etoile Clermont">
       </a>
 
-      <div class="nav-right">
-        <div class="social-icons">
-          <a href="https://www.facebook.com/Letoileclf" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/1-2.png" alt="Facebook" width="36" height="36"></a>
-          <a href="https://www.instagram.com/letoile.tacos/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/2-2.png" alt="Instagram" width="36" height="36"></a>
-          <a href="https://www.tiktok.com/@letoile.tacos?lang=fr" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/3-1.png" alt="TikTok" width="36" height="36"></a>
-          <a href="https://www.snapchat.com/add/letoiletacos" target="_blank" rel="noopener" aria-label="Snapchat"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/4-2.png" alt="Snapchat" width="36" height="36"></a>
+      <div class="header__right">
+        <div class="header__socials">
+          <a href="https://www.facebook.com/Letoileclf" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/1-2.png" alt="" width="32" height="32"></a>
+          <a href="https://www.instagram.com/letoile.tacos/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/2-2.png" alt="" width="32" height="32"></a>
+          <a href="https://www.tiktok.com/@letoile.tacos?lang=fr" target="_blank" rel="noopener" aria-label="TikTok"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/3-1.png" alt="" width="32" height="32"></a>
+          <a href="https://www.snapchat.com/add/letoiletacos" target="_blank" rel="noopener" aria-label="Snapchat"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/4-2.png" alt="" width="32" height="32"></a>
         </div>
-        <div class="order-online">
-          <span class="order-label">Commandez en ligne</span>
-          <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="36" height="36"></a>
-          <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="36" height="36"></a>
+        <div class="header__delivery">
+          <span>Commandez</span>
+          <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="34" height="34"></a>
+          <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="34" height="34"></a>
         </div>
       </div>
 
-      <button class="mobile-toggle" aria-label="Menu" aria-expanded="false">
+      <button class="header__burger" id="menuToggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- MOBILE NAV -->
-  <nav class="mobile-nav" id="mobileNav">
+  <!-- Mobile Nav -->
+  <div class="mobile-menu" id="mobileMenu">
     <ul>
+      <li><a href="index.html">Accueil</a></li>
       <li><a href="menu.html">Notre Carte</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="mobile-order">
-      <span>Commandez en ligne</span>
-      <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="40" height="40"></a>
-      <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="40" height="40"></a>
+    <div class="mobile-menu__delivery">
+      <span>Commander en ligne</span>
+      <div>
+        <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="44"></a>
+        <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="44"></a>
+      </div>
     </div>
-  </nav>
+  </div>
 
   <main>
-    <!-- HERO SLIDER -->
-    <section class="hero-slider">
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="hero">
       <div class="swiper hero-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://www.letoile-clermont.com/wp-content/uploads/2026/01/Letoile-Tacos-Campagne-Produit-01-Goodsite-Banniere-scaled.jpg" alt="L'Étoile Tacos Campagne" loading="eager">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/slider-1.jpg" alt="L'Étoile Slider" loading="lazy">
-          </div>
+          <div class="swiper-slide"><img src="https://www.letoile-clermont.com/wp-content/uploads/2026/01/Letoile-Tacos-Campagne-Produit-01-Goodsite-Banniere-scaled.jpg" alt="L'Étoile Tacos" fetchpriority="high"></div>
+          <div class="swiper-slide"><img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/slider-1.jpg" alt="L'Étoile Slider" loading="lazy"></div>
         </div>
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
 
-    <!-- ENCARTS (3 colonnes) -->
-    <section class="encarts">
-      <a href="menu.html#burgers" class="encart">
-        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/encart1-large.jpg" alt="Nos Burgers" loading="lazy">
-      </a>
-      <a href="menu.html#assiettes" class="encart">
-        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/encart2-large.jpg" alt="Assiettes & Texmex" loading="lazy">
-      </a>
-      <a href="menu.html#sandwichs" class="encart">
-        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/encart3-large.jpg" alt="Sandwichs Signatures" loading="lazy">
-      </a>
+    <!-- ===== PRODUCT CATEGORIES ===== -->
+    <section class="categories" data-animate>
+      <div class="categories__grid">
+        <a href="menu.html#burgers" class="cat-card">
+          <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/encart1-large.jpg" alt="Nos Burgers" loading="lazy">
+          <div class="cat-card__overlay"><h3>Nos Burgers</h3></div>
+        </a>
+        <a href="menu.html#assiettes" class="cat-card">
+          <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/encart2-large.jpg" alt="Assiettes & Texmex" loading="lazy">
+          <div class="cat-card__overlay"><h3>Texmex</h3></div>
+        </a>
+        <a href="menu.html#sandwichs" class="cat-card">
+          <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/encart3-large.jpg" alt="Sandwichs Signatures" loading="lazy">
+          <div class="cat-card__overlay"><h3>Sandwichs</h3></div>
+        </a>
+      </div>
     </section>
 
-    <!-- OFFRES (2 colonnes) -->
-    <section class="offres">
-      <a href="menu.html#assiettes" class="offre">
+    <!-- ===== OFFRES ===== -->
+    <section class="offers" data-animate>
+      <a href="menu.html#assiettes" class="offer-card">
         <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/offres-1.jpg" alt="Offre Assiettes" loading="lazy">
       </a>
-      <div class="offre">
+      <div class="offer-card">
         <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/07/offres-2.jpg" alt="Offre Menu" loading="lazy">
       </div>
     </section>
 
-    <!-- INFO SECTION (rouge) -->
-    <section class="info-band">
-      <div class="info-col">
-        <h3><span class="gold">L'ÉTOILE – BALLAINVILLIERS</span></h3>
-        <p>29 Rue Ballainvilliers<br>63000, Clermont Ferrand</p>
-        <p>Commandez au <a href="tel:+33473905738" class="gold"><strong>04.73.90.57.38</strong></a></p>
+    <!-- ===== INFO BAND ===== -->
+    <section class="info-band" data-animate>
+      <div class="info-band__col">
+        <h3 class="gold">L'ÉTOILE – BALLAINVILLIERS</h3>
+        <p>29 Rue Ballainvilliers<br>63000, Clermont-Ferrand</p>
+        <p class="info-band__phone"><a href="tel:+33473905738">04.73.90.57.38</a></p>
       </div>
-      <div class="info-col info-logo">
-        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos.png" alt="Logo L'Étoile" class="info-logo-img">
-        <p>Ouvert 7j/7 de 10h00 a 1h00</p>
+      <div class="info-band__col info-band__center">
+        <img src="https://www.letoile-clermont.com/wp-content/uploads/2024/10/cropped-logo_letoile_tacos-scaled.png" alt="Logo" class="info-band__logo">
+        <p>Ouvert <strong>7j/7</strong> de <strong>10h00</strong> à <strong>1h00</strong></p>
       </div>
-      <div class="info-col">
-        <h3><span class="gold">L'ÉTOILE – MONTFERRAND</span></h3>
-        <p>2 Rue Debay Facy<br>63000, Clermont Ferrand</p>
-        <p>Commandez au <a href="tel:+33463082410" class="gold"><strong>04.63.08.24.10</strong></a></p>
+      <div class="info-band__col">
+        <h3 class="gold">L'ÉTOILE – MONTFERRAND</h3>
+        <p>2 Rue Debay Facy<br>63000, Clermont-Ferrand</p>
+        <p class="info-band__phone"><a href="tel:+33463082410">04.63.08.24.10</a></p>
       </div>
     </section>
 
-    <!-- GALERIE Google Maps photos -->
-    <section class="gallery-section">
-      <h2>Découvrez notre restaurant</h2>
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" data-animate>
+      <h2 class="section-title">Découvrez nos créations</h2>
       <div class="swiper gallery-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipOqVHKPnXVRWJWYTJ-PxvDGlS6tuRvQV-h1X6sB=w408-h306-k-no" alt="L'Étoile intérieur" loading="lazy"></div>
-          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipN-EyEpMIqpKiWAoG7lUAFvGpFO3ID9Xd3iYQgx=w408-h544-k-no" alt="Tacos L'Étoile" loading="lazy"></div>
-          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipMGVSQmJGGnRY-Bj5pKsJ37xm6yRiWV2YgFG3WZ=w408-h306-k-no" alt="Burger L'Étoile" loading="lazy"></div>
-          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipNNXvPgIB0sSv-kYZcOYlPJUw4EZ3jxsVFz0nrk=w408-h306-k-no" alt="Restaurant L'Étoile" loading="lazy"></div>
-          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipPGS0z1_5vFxPoRZ2BKDw0hN6FW0m7Dz4fAuYGt=w408-h306-k-no" alt="Plat L'Étoile" loading="lazy"></div>
+          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipOqVHKPnXVRWJWYTJ-PxvDGlS6tuRvQV-h1X6sB=w408-h306-k-no" alt="L'Étoile" loading="lazy"></div>
+          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipN-EyEpMIqpKiWAoG7lUAFvGpFO3ID9Xd3iYQgx=w408-h544-k-no" alt="Tacos" loading="lazy"></div>
+          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipMGVSQmJGGnRY-Bj5pKsJ37xm6yRiWV2YgFG3WZ=w408-h306-k-no" alt="Burger" loading="lazy"></div>
+          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipNNXvPgIB0sSv-kYZcOYlPJUw4EZ3jxsVFz0nrk=w408-h306-k-no" alt="Restaurant" loading="lazy"></div>
+          <div class="swiper-slide"><img src="https://lh5.googleusercontent.com/p/AF1QipPGS0z1_5vFxPoRZ2BKDw0hN6FW0m7Dz4fAuYGt=w408-h306-k-no" alt="Plat" loading="lazy"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-primary">
-      <div class="footer-order">
-        <p class="footer-order-text">Commandez en ligne sur</p>
-        <div class="footer-delivery-logos">
-          <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="80"></a>
-          <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="70"></a>
-        </div>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__primary">
+      <p class="footer__order-text">Commandez en ligne sur</p>
+      <div class="footer__logos">
+        <a href="https://www.ubereats.com/store/letoile-ballainvilliers/W7dR6fEYQMW9Rufibn16AA" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/logo-uber-eats.png" alt="Uber Eats" width="70"></a>
+        <a href="https://deliveroo.fr/fr/menu/clermont-ferrand/clermont-centre-ville/l-etoile" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/pngegg.png" alt="Deliveroo" width="60"></a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">
-        <p>© <span id="year"></span> L'Etoile Clermont</p>
-      </div>
-      <div class="footer-services">
-        <img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/services-1.png" alt="Services" height="50">
-      </div>
-      <div class="footer-socials">
-        <a href="https://www.facebook.com/Letoileclf" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/1-2.png" alt="Facebook" width="36"></a>
-        <a href="https://www.instagram.com/letoile.tacos/" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/2-2.png" alt="Instagram" width="36"></a>
-        <a href="https://www.tiktok.com/@letoile.tacos?lang=fr" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/3-1.png" alt="TikTok" width="36"></a>
-        <a href="https://www.snapchat.com/add/letoiletacos" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/4-2.png" alt="Snapchat" width="36"></a>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> L'Etoile Clermont</p>
+      <img src="https://www.letoile-clermont.com/wp-content/uploads/2021/04/services-1.png" alt="Services" class="footer__services">
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/Letoileclf" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/1-2.png" alt="Facebook" width="32"></a>
+        <a href="https://www.instagram.com/letoile.tacos/" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/2-2.png" alt="Instagram" width="32"></a>
+        <a href="https://www.tiktok.com/@letoile.tacos?lang=fr" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/3-1.png" alt="TikTok" width="32"></a>
+        <a href="https://www.snapchat.com/add/letoiletacos" target="_blank" rel="noopener"><img src="https://www.letoile-clermont.com/wp-content/uploads/2025/02/4-2.png" alt="Snapchat" width="32"></a>
       </div>
     </div>
   </footer>
 
-  <!-- SCROLL TO TOP -->
-  <button id="scrollTop" class="scroll-top" aria-label="Retour en haut">▲</button>
+  <!-- Scroll Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
