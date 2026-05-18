@@ -1,4 +1,4 @@
-/* Kebab 37 — main.js
+/* L'Étoile Clermont — main.js
    - Mobile nav toggle
    - Sticky header shadow on scroll
    - Menu category filters
